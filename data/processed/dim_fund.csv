@@ -1,0 +1,7 @@
+fund_key,amfi_code,scheme_name,fund_house,scheme_type,scheme_category,isin_growth,isin_div_reinvestment,source_file
+1,119551,Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Aditya Birla Sun Life Mutual Fund,Open Ended Schemes,Debt Scheme - Banking and PSU Fund,INF209KA12Z1,INF209KA13Z9,nav_119551_20260625.csv
+2,120503,Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Axis Mutual Fund,Open Ended Schemes,Equity Scheme - ELSS,INF846K01EW2,,nav_120503_20260625.csv
+3,119092,HDFC Money Market Fund - Growth Option - Direct Plan,HDFC Mutual Fund,Open Ended Schemes,Debt Scheme - Money Market Fund,INF179KB1HU9,,nav_119092_20260625.csv
+4,118632,Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Nippon India Mutual Fund,Open Ended Schemes,Equity Scheme - Large Cap Fund,INF204K01XI3,,nav_118632_20260625.csv
+5,125497,SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,Open Ended Schemes,Equity Scheme - Small Cap Fund,INF200K01T51,,nav_125497_20260625.csv
+6,120841,quant Mid Cap Fund - Growth Option - Direct Plan,quant Mutual Fund,Open Ended Schemes,Equity Scheme - Mid Cap Fund,INF966L01887,,nav_120841_20260625.csv
