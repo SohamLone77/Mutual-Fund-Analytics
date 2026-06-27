@@ -8,13 +8,13 @@
 ## nav_history_clean.csv
 | Column | Type | Business Definition | Source |
 | --- | --- | --- | --- |
-| amfi_code | INTEGER | Unique AMFI scheme identifier used as the natural fund key. | Raw CSV / JSON metadata |
+| amfi_code | INTEGER | Unique AMFI scheme identifier. | Raw CSV / JSON metadata |
 | date | DATE | NAV observation date. | Raw NAV CSV and JSON payload |
 | nav | REAL | Daily net asset value. | Raw NAV CSV / JSON payload |
 | scheme_name | TEXT | Human-readable fund name. | Raw CSV / JSON meta |
 | fund_house | TEXT | Asset management company name. | Raw CSV / JSON meta |
-| scheme_type | TEXT | Scheme family such as open-ended equity or debt. | Raw JSON meta |
-| scheme_category | TEXT | Category describing the fund objective. | Raw JSON meta |
+| scheme_type | TEXT | Scheme family. | Raw JSON meta |
+| scheme_category | TEXT | Fund category. | Raw JSON meta |
 | isin_growth | TEXT | Growth option ISIN. | Raw JSON meta |
 | isin_div_reinvestment | TEXT | Dividend/reinvestment option ISIN. | Raw JSON meta |
 | source_file | TEXT | Originating raw file name. | File system |
@@ -25,7 +25,7 @@
 ## dim_fund
 | Column | Type | Business Definition | Source |
 | --- | --- | --- | --- |
-| fund_key | INTEGER | Surrogate primary key for the fund dimension. | Derived |
+| fund_key | INTEGER | Surrogate primary key. | Derived |
 | amfi_code | INTEGER | Natural fund key. | Cleaned NAV history |
 | scheme_name | TEXT | Fund name. | Cleaned NAV history |
 | fund_house | TEXT | AMC name. | Cleaned NAV history |
@@ -33,13 +33,13 @@
 | scheme_category | TEXT | Fund category. | Raw JSON meta |
 | isin_growth | TEXT | Growth ISIN. | Raw JSON meta |
 | isin_div_reinvestment | TEXT | Dividend/reinvestment ISIN. | Raw JSON meta |
-| source_file | TEXT | File contributing the dimension row. | Cleaned NAV history |
+| source_file | TEXT | Source file. | Cleaned NAV history |
 | created_at | TEXT | Row creation timestamp. | SQLite default |
 
 ## dim_date
 | Column | Type | Business Definition | Source |
 | --- | --- | --- | --- |
-| date_key | INTEGER | Surrogate date key in YYYYMMDD format. | Derived |
+| date_key | INTEGER | YYYYMMDD surrogate key. | Derived |
 | calendar_date | TEXT | ISO calendar date. | Derived |
 | year | INTEGER | Calendar year. | Derived |
 | quarter | INTEGER | Calendar quarter. | Derived |
@@ -62,7 +62,7 @@
 | previous_nav | REAL | Prior NAV value for the same fund. | Derived |
 | nav_change | REAL | NAV delta. | Derived |
 | nav_return_pct | REAL | NAV return percentage. | Derived |
-| source_file | TEXT | Raw file that contributed the fact row. | Cleaned NAV history |
+| source_file | TEXT | Raw file that contributed the row. | Cleaned NAV history |
 
 ## fact_aum
 | Column | Type | Business Definition | Source |
@@ -70,15 +70,15 @@
 | aum_key | INTEGER | Surrogate fact key. | Derived |
 | fund_key | INTEGER | Links to dim_fund. | Cleaned NAV history |
 | date_key | INTEGER | Latest observation date for the fund. | Cleaned NAV history |
-| aum_value | REAL | NAV-derived AUM proxy because no raw AUM feed is present. | Derived from NAV summary |
-| observation_count | INTEGER | Number of NAV observations used to compute the proxy. | Derived |
+| aum_value | REAL | NAV-derived AUM proxy because no raw AUM feed is present. | Derived |
+| observation_count | INTEGER | Number of NAV observations used. | Derived |
 | min_nav | REAL | Minimum observed NAV. | Derived |
 | max_nav | REAL | Maximum observed NAV. | Derived |
 | proxy_method | TEXT | Method used to approximate AUM. | Derived |
 | source_file | TEXT | Originating summary file. | Derived |
 
 ## fact_transactions
-Intended for investor transaction sources when those CSVs are added to the workspace.
+Reserved for investor transaction sources when available.
 
 ## fact_performance
-Intended for scheme performance sources when those CSVs are added to the workspace.
+Reserved for scheme performance sources when available.
