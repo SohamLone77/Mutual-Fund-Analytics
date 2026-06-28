@@ -1,0 +1,251 @@
+investor_id,age_group,gender,state,city_tier,registration_date,sip_amount,source_file
+INV00001,46-55,Male,Delhi,T30,2024-07-31,2465.49,synthetic_investors
+INV00002,65+,Female,West Bengal,T30,2023-08-06,1523.61,synthetic_investors
+INV00003,36-45,Female,West Bengal,B30,2021-08-31,4878.68,synthetic_investors
+INV00004,26-35,Male,Telangana,B30,2013-10-27,3171.24,synthetic_investors
+INV00005,46-55,Male,Maharashtra,B30,2026-02-06,3507.02,synthetic_investors
+INV00006,26-35,Male,Delhi,T30,2013-07-29,3448.15,synthetic_investors
+INV00007,46-55,Female,Delhi,T30,2017-05-24,4221.33,synthetic_investors
+INV00008,26-35,Male,Rajasthan,T30,2019-05-29,3574.74,synthetic_investors
+INV00009,36-45,Female,Rajasthan,T30,2022-06-12,3960.94,synthetic_investors
+INV00010,56-65,Male,Telangana,T30,2016-11-10,2912.69,synthetic_investors
+INV00011,26-35,Male,West Bengal,T30,2023-08-06,2360.68,synthetic_investors
+INV00012,46-55,Male,Uttar Pradesh,T30,2020-09-05,4822.54,synthetic_investors
+INV00013,46-55,Male,Telangana,B30,2020-08-06,3911.32,synthetic_investors
+INV00014,36-45,Male,West Bengal,T30,2017-01-24,4125.5,synthetic_investors
+INV00015,26-35,Male,Andhra Pradesh,T30,2024-07-01,2670.4,synthetic_investors
+INV00016,26-35,Male,Delhi,T30,2021-11-29,3291.32,synthetic_investors
+INV00017,46-55,Male,Delhi,T30,2023-12-19,3551.67,synthetic_investors
+INV00018,26-35,Female,Rajasthan,T30,2019-03-15,3207.2,synthetic_investors
+INV00019,26-35,Female,Delhi,T30,2018-12-30,2956.18,synthetic_investors
+INV00020,46-55,Male,Andhra Pradesh,T30,2014-02-24,3117.88,synthetic_investors
+INV00021,56-65,Female,Delhi,B30,2016-07-28,2620.44,synthetic_investors
+INV00022,46-55,Male,West Bengal,T30,2016-08-27,3568.1,synthetic_investors
+INV00023,36-45,Male,West Bengal,T30,2017-02-08,4018.74,synthetic_investors
+INV00024,56-65,Female,Delhi,T30,2022-09-10,2811.01,synthetic_investors
+INV00025,36-45,Male,Rajasthan,T30,2014-02-09,4678.2,synthetic_investors
+INV00026,36-45,Male,Rajasthan,T30,2014-12-06,3537.1,synthetic_investors
+INV00027,26-35,Female,Andhra Pradesh,T30,2020-11-04,3565.85,synthetic_investors
+INV00028,18-25,Female,Delhi,B30,2019-06-28,2531.9,synthetic_investors
+INV00029,36-45,Male,Delhi,T30,2025-08-25,2773.04,synthetic_investors
+INV00030,26-35,Male,Uttar Pradesh,T30,2020-01-09,3118.9,synthetic_investors
+INV00031,56-65,Female,Uttar Pradesh,T30,2014-11-21,1955.96,synthetic_investors
+INV00032,46-55,Male,Karnataka,B30,2021-11-14,3889.11,synthetic_investors
+INV00033,26-35,Female,Andhra Pradesh,T30,2016-01-30,2782.27,synthetic_investors
+INV00034,36-45,Female,Delhi,T30,2023-11-19,5254.57,synthetic_investors
+INV00035,26-35,Male,Andhra Pradesh,B30,2016-06-13,3456.94,synthetic_investors
+INV00036,18-25,Male,Andhra Pradesh,B30,2026-05-22,2825.32,synthetic_investors
+INV00037,56-65,Female,Gujarat,T30,2019-12-25,2910.57,synthetic_investors
+INV00038,46-55,Male,Telangana,B30,2014-04-10,3925.33,synthetic_investors
+INV00039,65+,Male,Maharashtra,B30,2014-08-23,1741.84,synthetic_investors
+INV00040,26-35,Male,West Bengal,T30,2024-10-14,2684.64,synthetic_investors
+INV00041,46-55,Female,Delhi,T30,2019-09-26,4030.9,synthetic_investors
+INV00042,26-35,Male,Maharashtra,T30,2022-02-12,3171.94,synthetic_investors
+INV00043,46-55,Male,Delhi,B30,2015-09-02,4426.48,synthetic_investors
+INV00044,46-55,Male,Delhi,B30,2014-08-23,3468.83,synthetic_investors
+INV00045,36-45,Male,Uttar Pradesh,B30,2021-12-14,4374.85,synthetic_investors
+INV00046,65+,Male,Uttar Pradesh,T30,2020-06-22,1448.66,synthetic_investors
+INV00047,26-35,Male,Maharashtra,T30,2026-01-07,2708.53,synthetic_investors
+INV00048,56-65,Male,Rajasthan,T30,2023-08-06,3407.75,synthetic_investors
+INV00049,56-65,Female,Delhi,T30,2016-02-14,2264.54,synthetic_investors
+INV00050,56-65,Male,Karnataka,T30,2018-07-18,3366.43,synthetic_investors
+INV00051,46-55,Female,Karnataka,T30,2019-02-13,2919.4,synthetic_investors
+INV00052,46-55,Female,Andhra Pradesh,T30,2014-05-25,3548.12,synthetic_investors
+INV00053,26-35,Female,Tamil Nadu,T30,2017-03-10,3647.75,synthetic_investors
+INV00054,26-35,Male,Uttar Pradesh,T30,2015-01-20,3062.81,synthetic_investors
+INV00055,18-25,Male,Telangana,T30,2013-09-12,2601.04,synthetic_investors
+INV00056,36-45,Male,Andhra Pradesh,B30,2019-10-11,3915.54,synthetic_investors
+INV00057,18-25,Male,Telangana,T30,2016-02-29,2823.05,synthetic_investors
+INV00058,36-45,Male,Maharashtra,T30,2018-01-04,3598.95,synthetic_investors
+INV00059,56-65,Male,Delhi,T30,2025-06-26,3267.43,synthetic_investors
+INV00060,56-65,Female,Tamil Nadu,B30,2023-10-20,2826.44,synthetic_investors
+INV00061,46-55,Male,Telangana,T30,2020-03-24,4806.5,synthetic_investors
+INV00062,36-45,Male,Rajasthan,T30,2021-08-16,4198.75,synthetic_investors
+INV00063,36-45,Male,Rajasthan,T30,2016-02-14,5199.7,synthetic_investors
+INV00064,36-45,Male,Gujarat,T30,2022-03-29,5553.04,synthetic_investors
+INV00065,56-65,Male,West Bengal,T30,2017-06-08,3678.94,synthetic_investors
+INV00066,46-55,Female,Uttar Pradesh,T30,2020-03-09,3322.96,synthetic_investors
+INV00067,46-55,Male,Uttar Pradesh,B30,2022-05-13,3848.15,synthetic_investors
+INV00068,46-55,Male,Rajasthan,T30,2022-10-10,2724.72,synthetic_investors
+INV00069,26-35,Female,Gujarat,T30,2023-10-20,3567.22,synthetic_investors
+INV00070,46-55,Female,Maharashtra,T30,2016-05-29,3340.94,synthetic_investors
+INV00071,46-55,Male,Gujarat,T30,2020-08-06,2232.76,synthetic_investors
+INV00072,36-45,Female,Andhra Pradesh,T30,2023-10-05,2828.78,synthetic_investors
+INV00073,65+,Male,West Bengal,T30,2014-07-24,1919.35,synthetic_investors
+INV00074,36-45,Female,Karnataka,T30,2022-01-13,4688.63,synthetic_investors
+INV00075,46-55,Male,West Bengal,T30,2017-11-20,3695.67,synthetic_investors
+INV00076,26-35,Female,Uttar Pradesh,T30,2018-11-30,4053.32,synthetic_investors
+INV00077,36-45,Female,Tamil Nadu,T30,2023-07-07,4509.26,synthetic_investors
+INV00078,65+,Female,Telangana,T30,2025-10-24,2554.16,synthetic_investors
+INV00079,46-55,Male,Delhi,T30,2020-12-04,3873.79,synthetic_investors
+INV00080,36-45,Female,Delhi,T30,2016-12-25,3856.75,synthetic_investors
+INV00081,36-45,Female,West Bengal,T30,2023-07-22,2628.82,synthetic_investors
+INV00082,56-65,Male,West Bengal,T30,2024-04-17,2869.67,synthetic_investors
+INV00083,26-35,Female,Telangana,T30,2013-05-15,3096.54,synthetic_investors
+INV00084,46-55,Male,Maharashtra,T30,2025-04-12,3618.17,synthetic_investors
+INV00085,18-25,Male,Telangana,B30,2021-03-04,1613.05,synthetic_investors
+INV00086,56-65,Male,Rajasthan,B30,2023-10-20,2899.69,synthetic_investors
+INV00087,46-55,Female,Delhi,T30,2013-07-14,4725.85,synthetic_investors
+INV00088,46-55,Female,Delhi,B30,2015-02-04,3192.52,synthetic_investors
+INV00089,26-35,Female,Uttar Pradesh,T30,2026-03-23,3426.27,synthetic_investors
+INV00090,46-55,Male,Karnataka,T30,2024-11-28,4434.96,synthetic_investors
+INV00091,26-35,Male,Tamil Nadu,T30,2026-03-23,3446.46,synthetic_investors
+INV00092,46-55,Male,Delhi,B30,2014-12-06,3565.53,synthetic_investors
+INV00093,36-45,Female,Karnataka,B30,2021-09-30,4810.54,synthetic_investors
+INV00094,36-45,Male,Andhra Pradesh,T30,2019-05-29,4556.2,synthetic_investors
+INV00095,26-35,Male,Rajasthan,T30,2018-10-01,3185.1,synthetic_investors
+INV00096,36-45,Male,Telangana,T30,2015-12-01,3594.92,synthetic_investors
+INV00097,18-25,Male,Delhi,T30,2019-05-14,1819.01,synthetic_investors
+INV00098,36-45,Female,Uttar Pradesh,T30,2021-09-30,5001.53,synthetic_investors
+INV00099,46-55,Male,Gujarat,T30,2018-10-16,5576.81,synthetic_investors
+INV00100,36-45,Female,Uttar Pradesh,B30,2024-12-13,4454.01,synthetic_investors
+INV00101,36-45,Female,Karnataka,B30,2017-03-25,5039.12,synthetic_investors
+INV00102,56-65,Male,Maharashtra,T30,2016-10-11,2644.43,synthetic_investors
+INV00103,36-45,Female,Andhra Pradesh,B30,2013-03-01,3289.0,synthetic_investors
+INV00104,36-45,Male,Karnataka,T30,2021-02-02,2098.73,synthetic_investors
+INV00105,65+,Female,Delhi,T30,2023-06-07,1950.69,synthetic_investors
+INV00106,46-55,Male,Andhra Pradesh,T30,2021-08-16,4340.91,synthetic_investors
+INV00107,36-45,Male,West Bengal,B30,2015-03-21,5819.44,synthetic_investors
+INV00108,36-45,Female,Telangana,T30,2026-05-07,5637.1,synthetic_investors
+INV00109,36-45,Male,Telangana,T30,2023-03-09,5767.42,synthetic_investors
+INV00110,26-35,Male,Karnataka,T30,2025-03-28,2298.12,synthetic_investors
+INV00111,26-35,Male,Andhra Pradesh,T30,2020-11-19,2746.94,synthetic_investors
+INV00112,26-35,Female,Telangana,T30,2021-08-01,3054.05,synthetic_investors
+INV00113,46-55,Male,West Bengal,T30,2017-12-05,4253.26,synthetic_investors
+INV00114,56-65,Male,Uttar Pradesh,B30,2023-05-08,2756.1,synthetic_investors
+INV00115,56-65,Male,Gujarat,T30,2024-06-16,2352.05,synthetic_investors
+INV00116,36-45,Female,Rajasthan,T30,2021-07-02,5229.15,synthetic_investors
+INV00117,26-35,Male,Rajasthan,T30,2025-07-11,3308.27,synthetic_investors
+INV00118,36-45,Male,Delhi,T30,2016-09-26,4653.77,synthetic_investors
+INV00119,65+,Male,Telangana,B30,2019-06-13,1917.76,synthetic_investors
+INV00120,46-55,Female,Rajasthan,B30,2023-07-22,4288.65,synthetic_investors
+INV00121,46-55,Male,Rajasthan,T30,2020-06-07,4902.0,synthetic_investors
+INV00122,65+,Male,Telangana,B30,2022-11-24,1662.65,synthetic_investors
+INV00123,26-35,Male,Uttar Pradesh,T30,2023-06-22,3668.06,synthetic_investors
+INV00124,36-45,Female,Karnataka,B30,2018-07-18,5532.3,synthetic_investors
+INV00125,36-45,Female,Karnataka,B30,2025-06-26,4862.96,synthetic_investors
+INV00126,36-45,Male,Tamil Nadu,T30,2014-06-09,3346.78,synthetic_investors
+INV00127,46-55,Female,West Bengal,B30,2022-12-24,3965.28,synthetic_investors
+INV00128,26-35,Male,Karnataka,T30,2024-07-31,3354.89,synthetic_investors
+INV00129,46-55,Male,West Bengal,B30,2018-06-03,4732.05,synthetic_investors
+INV00130,26-35,Female,Uttar Pradesh,B30,2017-09-06,2966.56,synthetic_investors
+INV00131,36-45,Male,Gujarat,B30,2016-09-11,3598.16,synthetic_investors
+INV00132,26-35,Male,Delhi,B30,2022-09-10,4382.35,synthetic_investors
+INV00133,26-35,Male,Uttar Pradesh,T30,2014-11-06,2203.13,synthetic_investors
+INV00134,36-45,Female,Karnataka,T30,2019-09-11,5850.99,synthetic_investors
+INV00135,18-25,Male,Uttar Pradesh,T30,2013-03-16,2270.25,synthetic_investors
+INV00136,36-45,Male,Telangana,B30,2025-12-08,3769.04,synthetic_investors
+INV00137,26-35,Female,Tamil Nadu,T30,2016-02-29,3477.67,synthetic_investors
+INV00138,36-45,Female,Karnataka,T30,2020-12-19,3921.76,synthetic_investors
+INV00139,26-35,Male,Gujarat,B30,2015-02-04,3421.82,synthetic_investors
+INV00140,36-45,Female,Uttar Pradesh,T30,2023-07-22,5006.32,synthetic_investors
+INV00141,65+,Male,Karnataka,B30,2024-01-03,1658.93,synthetic_investors
+INV00142,26-35,Male,Tamil Nadu,T30,2014-05-10,2955.33,synthetic_investors
+INV00143,36-45,Male,Gujarat,B30,2013-06-14,3830.37,synthetic_investors
+INV00144,18-25,Male,Uttar Pradesh,T30,2013-11-11,2120.36,synthetic_investors
+INV00145,36-45,Male,Telangana,T30,2014-06-24,5349.83,synthetic_investors
+INV00146,46-55,Male,Andhra Pradesh,T30,2017-01-24,4242.88,synthetic_investors
+INV00147,18-25,Male,Delhi,T30,2024-08-15,2116.57,synthetic_investors
+INV00148,36-45,Male,Delhi,B30,2018-10-16,3671.95,synthetic_investors
+INV00149,26-35,Male,Uttar Pradesh,T30,2016-03-30,2668.42,synthetic_investors
+INV00150,26-35,Male,Karnataka,T30,2025-07-26,2555.15,synthetic_investors
+INV00151,46-55,Male,Rajasthan,T30,2013-08-13,3990.25,synthetic_investors
+INV00152,18-25,Male,Telangana,T30,2013-05-30,1310.08,synthetic_investors
+INV00153,26-35,Male,Karnataka,B30,2020-12-19,3257.04,synthetic_investors
+INV00154,56-65,Male,Delhi,B30,2015-03-06,2349.86,synthetic_investors
+INV00155,26-35,Female,Uttar Pradesh,T30,2019-02-13,4228.26,synthetic_investors
+INV00156,36-45,Female,Gujarat,B30,2017-04-09,4858.46,synthetic_investors
+INV00157,26-35,Male,Rajasthan,T30,2017-04-09,3396.3,synthetic_investors
+INV00158,36-45,Male,West Bengal,B30,2015-03-21,5862.27,synthetic_investors
+INV00159,46-55,Male,Gujarat,T30,2024-12-28,3808.24,synthetic_investors
+INV00160,26-35,Female,Maharashtra,T30,2015-04-20,2449.67,synthetic_investors
+INV00161,18-25,Male,Uttar Pradesh,T30,2026-05-22,2204.53,synthetic_investors
+INV00162,56-65,Female,Delhi,T30,2020-03-24,2723.87,synthetic_investors
+INV00163,18-25,Male,Gujarat,T30,2016-12-10,1492.46,synthetic_investors
+INV00164,18-25,Male,Gujarat,B30,2016-02-14,2215.41,synthetic_investors
+INV00165,46-55,Male,Uttar Pradesh,T30,2018-05-04,4680.53,synthetic_investors
+INV00166,36-45,Female,West Bengal,T30,2026-04-07,4675.96,synthetic_investors
+INV00167,18-25,Female,Tamil Nadu,T30,2020-01-09,1951.29,synthetic_investors
+INV00168,56-65,Male,Gujarat,T30,2022-03-14,2225.73,synthetic_investors
+INV00169,26-35,Male,Andhra Pradesh,B30,2024-07-31,2530.64,synthetic_investors
+INV00170,36-45,Female,Rajasthan,T30,2024-10-29,4404.74,synthetic_investors
+INV00171,46-55,Female,Uttar Pradesh,T30,2023-07-22,3028.6,synthetic_investors
+INV00172,56-65,Female,Telangana,T30,2023-10-05,3519.45,synthetic_investors
+INV00173,46-55,Male,Karnataka,T30,2026-03-23,4999.52,synthetic_investors
+INV00174,56-65,Male,Rajasthan,T30,2017-04-09,3229.05,synthetic_investors
+INV00175,36-45,Male,Uttar Pradesh,T30,2025-08-10,5235.97,synthetic_investors
+INV00176,36-45,Male,West Bengal,T30,2014-10-07,4844.22,synthetic_investors
+INV00177,36-45,Female,West Bengal,T30,2016-04-14,4452.69,synthetic_investors
+INV00178,56-65,Male,Delhi,T30,2015-09-17,2594.9,synthetic_investors
+INV00179,36-45,Male,Gujarat,T30,2013-07-29,5086.67,synthetic_investors
+INV00180,46-55,Male,Telangana,T30,2014-06-24,3648.86,synthetic_investors
+INV00181,46-55,Female,West Bengal,B30,2025-02-26,3040.0,synthetic_investors
+INV00182,65+,Male,Delhi,T30,2014-11-06,1660.25,synthetic_investors
+INV00183,26-35,Female,West Bengal,T30,2021-04-18,2964.77,synthetic_investors
+INV00184,26-35,Male,Gujarat,T30,2024-07-01,2703.3,synthetic_investors
+INV00185,26-35,Male,Telangana,B30,2018-06-18,3115.07,synthetic_investors
+INV00186,26-35,Female,Delhi,B30,2014-08-08,2464.44,synthetic_investors
+INV00187,26-35,Female,Rajasthan,T30,2015-06-04,3520.02,synthetic_investors
+INV00188,26-35,Female,Gujarat,B30,2024-07-01,2645.36,synthetic_investors
+INV00189,36-45,Male,Tamil Nadu,T30,2016-04-14,3797.73,synthetic_investors
+INV00190,56-65,Female,Tamil Nadu,T30,2019-12-25,2714.46,synthetic_investors
+INV00191,36-45,Male,Tamil Nadu,T30,2014-10-07,4863.14,synthetic_investors
+INV00192,36-45,Female,Gujarat,T30,2015-03-06,3567.8,synthetic_investors
+INV00193,26-35,Male,Tamil Nadu,B30,2014-08-08,3710.56,synthetic_investors
+INV00194,46-55,Male,Andhra Pradesh,T30,2018-05-19,4029.72,synthetic_investors
+INV00195,65+,Female,Telangana,T30,2022-12-24,1946.37,synthetic_investors
+INV00196,65+,Male,Uttar Pradesh,T30,2013-08-28,1643.17,synthetic_investors
+INV00197,46-55,Female,Rajasthan,T30,2023-09-20,3889.62,synthetic_investors
+INV00198,36-45,Male,West Bengal,B30,2012-12-31,4292.78,synthetic_investors
+INV00199,18-25,Male,West Bengal,T30,2014-09-22,2157.95,synthetic_investors
+INV00200,36-45,Female,Rajasthan,B30,2017-04-24,5394.79,synthetic_investors
+INV00201,46-55,Male,Maharashtra,B30,2019-05-14,2752.99,synthetic_investors
+INV00202,26-35,Male,Andhra Pradesh,T30,2024-06-01,2391.14,synthetic_investors
+INV00203,56-65,Female,Karnataka,T30,2026-05-22,2556.67,synthetic_investors
+INV00204,36-45,Female,West Bengal,B30,2017-12-05,4411.12,synthetic_investors
+INV00205,36-45,Female,Uttar Pradesh,B30,2019-11-10,5167.24,synthetic_investors
+INV00206,46-55,Male,Rajasthan,T30,2018-07-03,3802.05,synthetic_investors
+INV00207,26-35,Male,Gujarat,T30,2021-10-30,3418.21,synthetic_investors
+INV00208,36-45,Male,Gujarat,B30,2023-07-07,3653.51,synthetic_investors
+INV00209,46-55,Male,Telangana,T30,2016-09-11,4223.88,synthetic_investors
+INV00210,46-55,Female,West Bengal,T30,2015-09-17,2358.16,synthetic_investors
+INV00211,65+,Male,West Bengal,T30,2016-05-29,2138.75,synthetic_investors
+INV00212,65+,Male,Delhi,T30,2022-03-29,1628.95,synthetic_investors
+INV00213,56-65,Male,Tamil Nadu,B30,2018-12-30,3141.41,synthetic_investors
+INV00214,36-45,Male,West Bengal,T30,2019-08-12,3882.52,synthetic_investors
+INV00215,26-35,Female,Andhra Pradesh,B30,2025-06-11,3452.01,synthetic_investors
+INV00216,46-55,Female,Karnataka,T30,2023-04-08,2857.92,synthetic_investors
+INV00217,26-35,Male,Rajasthan,T30,2016-11-25,3456.16,synthetic_investors
+INV00218,36-45,Male,Rajasthan,B30,2024-01-03,3978.06,synthetic_investors
+INV00219,18-25,Male,Delhi,B30,2023-10-05,2169.37,synthetic_investors
+INV00220,46-55,Male,Gujarat,B30,2018-04-04,3175.59,synthetic_investors
+INV00221,26-35,Male,Delhi,B30,2021-05-03,4026.73,synthetic_investors
+INV00222,18-25,Male,Uttar Pradesh,T30,2023-09-05,2243.72,synthetic_investors
+INV00223,46-55,Male,West Bengal,T30,2024-03-18,3610.74,synthetic_investors
+INV00224,36-45,Male,Karnataka,T30,2022-03-29,3968.6,synthetic_investors
+INV00225,65+,Male,Gujarat,B30,2014-04-10,2115.47,synthetic_investors
+INV00226,36-45,Male,Gujarat,T30,2018-09-16,4920.93,synthetic_investors
+INV00227,36-45,Female,Rajasthan,B30,2024-03-18,5555.89,synthetic_investors
+INV00228,36-45,Female,West Bengal,T30,2023-10-20,4305.25,synthetic_investors
+INV00229,26-35,Female,Andhra Pradesh,T30,2014-04-10,3402.77,synthetic_investors
+INV00230,18-25,Male,Karnataka,T30,2012-12-31,2106.61,synthetic_investors
+INV00231,18-25,Male,West Bengal,T30,2024-02-02,2103.42,synthetic_investors
+INV00232,56-65,Female,Uttar Pradesh,B30,2020-04-08,3496.38,synthetic_investors
+INV00233,36-45,Female,Uttar Pradesh,B30,2016-06-13,4428.07,synthetic_investors
+INV00234,46-55,Male,Tamil Nadu,T30,2017-12-20,3428.47,synthetic_investors
+INV00235,46-55,Male,West Bengal,T30,2014-02-24,4497.03,synthetic_investors
+INV00236,56-65,Male,Rajasthan,T30,2026-05-07,2517.01,synthetic_investors
+INV00237,36-45,Male,Gujarat,B30,2024-10-14,2514.79,synthetic_investors
+INV00238,26-35,Male,Delhi,T30,2021-10-30,2331.78,synthetic_investors
+INV00239,36-45,Male,Tamil Nadu,T30,2024-03-03,4166.48,synthetic_investors
+INV00240,18-25,Male,Tamil Nadu,T30,2019-07-13,1804.85,synthetic_investors
+INV00241,46-55,Female,Tamil Nadu,T30,2020-07-22,4050.49,synthetic_investors
+INV00242,36-45,Male,Delhi,T30,2020-08-06,5012.61,synthetic_investors
+INV00243,18-25,Male,Uttar Pradesh,T30,2025-01-27,2442.73,synthetic_investors
+INV00244,56-65,Male,Telangana,B30,2019-05-29,3178.06,synthetic_investors
+INV00245,26-35,Male,Delhi,T30,2015-08-18,4055.31,synthetic_investors
+INV00246,26-35,Male,Gujarat,T30,2018-09-16,3141.02,synthetic_investors
+INV00247,56-65,Male,Tamil Nadu,T30,2017-11-05,3949.94,synthetic_investors
+INV00248,26-35,Male,Delhi,B30,2015-10-02,2788.99,synthetic_investors
+INV00249,26-35,Male,Maharashtra,T30,2014-07-09,2511.47,synthetic_investors
+INV00250,56-65,Female,Gujarat,T30,2024-01-18,3194.41,synthetic_investors

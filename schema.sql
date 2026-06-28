@@ -90,3 +90,14 @@ CREATE TABLE IF NOT EXISTS fact_aum (
     FOREIGN KEY (date_key) REFERENCES dim_date (date_key),
     UNIQUE (fund_key, date_key)
 );
+
+CREATE TABLE IF NOT EXISTS dim_investor (
+    investor_id TEXT PRIMARY KEY,
+    age_group TEXT,
+    gender TEXT,
+    state TEXT,
+    city_tier TEXT,
+    registration_date TEXT,
+    sip_amount REAL,
+    source_file TEXT
+);

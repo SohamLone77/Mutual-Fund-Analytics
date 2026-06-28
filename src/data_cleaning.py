@@ -114,6 +114,17 @@ CREATE TABLE IF NOT EXISTS fact_aum (
     FOREIGN KEY (date_key) REFERENCES dim_date (date_key),
     UNIQUE (fund_key, date_key)
 );
+
+CREATE TABLE IF NOT EXISTS dim_investor (
+    investor_id TEXT PRIMARY KEY,
+    age_group TEXT,
+    gender TEXT,
+    state TEXT,
+    city_tier TEXT,
+    registration_date TEXT,
+    sip_amount REAL,
+    source_file TEXT
+);
 """.strip()
 
 
@@ -279,7 +290,31 @@ DATA_DICTIONARY_MD = """
 | source_file | TEXT | Originating summary file. | Derived |
 
 ## fact_transactions
-Reserved for investor transaction sources when available.
+| Column | Type | Business Definition | Source |
+| --- | --- | --- | --- |
+| transaction_key | INTEGER | Surrogate transaction key. | Derived |
+| fund_key | INTEGER | Links to dim_fund. | Synthetic activity feed |
+| transaction_date_key | INTEGER | Links to dim_date. | Synthetic activity feed |
+| investor_id | TEXT | Investor identifier. | Synthetic activity feed |
+| transaction_type | TEXT | SIP or LUMPSUM transaction type. | Synthetic activity feed |
+| amount | REAL | Transaction amount. | Synthetic activity feed |
+| units | REAL | Units transacted. | Synthetic activity feed |
+| nav | REAL | NAV at transaction time. | Synthetic activity feed |
+| state | TEXT | Investor state. | Synthetic activity feed |
+| kyc_status | TEXT | KYC status. | Synthetic activity feed |
+| source_file | TEXT | Synthetic source label. | Synthetic activity feed |
+
+## dim_investor
+| Column | Type | Business Definition | Source |
+| --- | --- | --- | --- |
+| investor_id | TEXT | Investor identifier. | Synthetic activity feed |
+| age_group | TEXT | Investor age band. | Synthetic activity feed |
+| gender | TEXT | Investor gender. | Synthetic activity feed |
+| state | TEXT | Home state. | Synthetic activity feed |
+| city_tier | TEXT | T30/B30 tier flag. | Synthetic activity feed |
+| registration_date | TEXT | First onboarding date. | Synthetic activity feed |
+| sip_amount | REAL | Typical SIP amount. | Synthetic activity feed |
+| source_file | TEXT | Synthetic source label. | Synthetic activity feed |
 
 ## fact_performance
 Reserved for scheme performance sources when available.
@@ -449,11 +484,78 @@ class MutualFundPipeline:
         ].copy()
         fact_aum.insert(0, "aum_key", range(1, len(fact_aum) + 1))
 
+        rng = np.random.default_rng(42)
+        age_groups = ["18-25", "26-35", "36-45", "46-55", "56-65", "65+"]
+        genders = ["Male", "Female"]
+        states = ["Maharashtra", "Gujarat", "Karnataka", "Tamil Nadu", "Delhi", "Uttar Pradesh", "Rajasthan", "West Bengal", "Telangana", "Andhra Pradesh"]
+        city_tiers = ["T30", "B30"]
+
+        investor_rows = []
+        for index in range(1, 251):
+            age_group = rng.choice(age_groups, p=[0.08, 0.22, 0.30, 0.20, 0.12, 0.08])
+            gender = rng.choice(genders, p=[0.68, 0.32])
+            state = rng.choice(states)
+            city_tier = rng.choice(city_tiers, p=[0.72, 0.28])
+            registration_date = pd.Timestamp(rng.choice(pd.date_range(nav_history["date"].min(), nav_history["date"].max(), freq="15D"))).strftime("%Y-%m-%d")
+            base_sip = {
+                "18-25": 2200,
+                "26-35": 3200,
+                "36-45": 4500,
+                "46-55": 3800,
+                "56-65": 2800,
+                "65+": 1800,
+            }[age_group]
+            sip_amount = float(max(500, rng.normal(base_sip, base_sip * 0.18)))
+            investor_rows.append(
+                {
+                    "investor_id": f"INV{index:05d}",
+                    "age_group": age_group,
+                    "gender": gender,
+                    "state": state,
+                    "city_tier": city_tier,
+                    "registration_date": registration_date,
+                    "sip_amount": round(sip_amount, 2),
+                    "source_file": "synthetic_investors",
+                }
+            )
+
+        dim_investor = pd.DataFrame(investor_rows)
+
+        month_starts = pd.date_range("2022-01-01", "2025-12-01", freq="MS")
+        transaction_rows = []
+        for month_index, month_start in enumerate(month_starts):
+            active_investors = dim_investor.sample(frac=0.35, random_state=month_index)
+            monthly_base = 15000 + (month_index / max(len(month_starts) - 1, 1)) * (31002 - 15000)
+            for investor_position, investor_row in active_investors.reset_index(drop=True).iterrows():
+                fund_row = dim_fund.sample(1, random_state=month_index * 1000 + investor_position).iloc[0]
+                transaction_type = "SIP" if rng.random() < 0.82 else "LUMPSUM"
+                amount = max(500, rng.normal(monthly_base * (1.0 if transaction_type == "SIP" else 1.6), 2500))
+                units = amount / max(float(rng.uniform(10, 250)), 1)
+                transaction_rows.append(
+                    {
+                        "fund_key": int(fund_row["fund_key"]),
+                        "transaction_date_key": int(month_start.strftime("%Y%m%d")),
+                        "investor_id": investor_row["investor_id"],
+                        "transaction_type": transaction_type,
+                        "amount": round(float(amount), 2),
+                        "units": round(float(units), 2),
+                        "nav": round(float(rng.uniform(10, 250)), 2),
+                        "state": investor_row["state"],
+                        "kyc_status": "Verified" if rng.random() < 0.9 else "Pending",
+                        "source_file": "synthetic_transactions",
+                    }
+                )
+
+        fact_transactions = pd.DataFrame(transaction_rows)
+        fact_transactions.insert(0, "transaction_key", range(1, len(fact_transactions) + 1))
+
         return {
             "dim_fund": dim_fund,
             "dim_date": dim_date,
             "fact_nav": fact_nav,
             "fact_aum": fact_aum,
+            "dim_investor": dim_investor,
+            "fact_transactions": fact_transactions,
         }
 
     def write_artifacts(self) -> None:
@@ -462,32 +564,17 @@ class MutualFundPipeline:
         DICTIONARY_PATH.write_text(DATA_DICTIONARY_MD + "\n", encoding="utf-8")
 
     def load_sqlite(self, frames: dict[str, pd.DataFrame]) -> None:
-        if self.db_path.exists():
-            self.db_path.unlink()
-
         engine = create_engine(f"sqlite:///{self.db_path.resolve().as_posix()}")
 
         with engine.begin() as connection:
+            for table_name in ["fact_transactions", "fact_performance", "fact_aum", "fact_nav", "dim_investor", "dim_date", "dim_fund"]:
+                connection.exec_driver_sql(f"DROP TABLE IF EXISTS {table_name}")
+
             for statement in [stmt.strip() for stmt in SCHEMA_SQL.split(";") if stmt.strip()]:
                 connection.exec_driver_sql(statement)
 
-        for table_name in ["dim_fund", "dim_date", "fact_nav", "fact_aum"]:
+        for table_name in ["dim_fund", "dim_date", "fact_nav", "fact_aum", "dim_investor", "fact_transactions"]:
             frames[table_name].to_sql(table_name, engine, if_exists="append", index=False)
-
-        pd.DataFrame(
-            columns=[
-                "fund_key",
-                "transaction_date_key",
-                "investor_id",
-                "transaction_type",
-                "amount",
-                "units",
-                "nav",
-                "state",
-                "kyc_status",
-                "source_file",
-            ]
-        ).to_sql("fact_transactions", engine, if_exists="append", index=False)
 
         pd.DataFrame(
             columns=[
@@ -511,7 +598,8 @@ class MutualFundPipeline:
             "dim_date": len(frames["dim_date"]),
             "fact_nav": len(frames["fact_nav"]),
             "fact_aum": len(frames["fact_aum"]),
-            "fact_transactions": 0,
+            "dim_investor": len(frames["dim_investor"]),
+            "fact_transactions": len(frames["fact_transactions"]),
             "fact_performance": 0,
         }
 

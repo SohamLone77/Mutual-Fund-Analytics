@@ -78,7 +78,31 @@
 | source_file | TEXT | Originating summary file. | Derived |
 
 ## fact_transactions
-Reserved for investor transaction sources when available.
+| Column | Type | Business Definition | Source |
+| --- | --- | --- | --- |
+| transaction_key | INTEGER | Surrogate transaction key. | Derived |
+| fund_key | INTEGER | Links to dim_fund. | Synthetic activity feed |
+| transaction_date_key | INTEGER | Links to dim_date. | Synthetic activity feed |
+| investor_id | TEXT | Investor identifier. | Synthetic activity feed |
+| transaction_type | TEXT | SIP or LUMPSUM transaction type. | Synthetic activity feed |
+| amount | REAL | Transaction amount. | Synthetic activity feed |
+| units | REAL | Units transacted. | Synthetic activity feed |
+| nav | REAL | NAV at transaction time. | Synthetic activity feed |
+| state | TEXT | Investor state. | Synthetic activity feed |
+| kyc_status | TEXT | KYC status. | Synthetic activity feed |
+| source_file | TEXT | Synthetic source label. | Synthetic activity feed |
+
+## dim_investor
+| Column | Type | Business Definition | Source |
+| --- | --- | --- | --- |
+| investor_id | TEXT | Investor identifier. | Synthetic activity feed |
+| age_group | TEXT | Investor age band. | Synthetic activity feed |
+| gender | TEXT | Investor gender. | Synthetic activity feed |
+| state | TEXT | Home state. | Synthetic activity feed |
+| city_tier | TEXT | T30/B30 tier flag. | Synthetic activity feed |
+| registration_date | TEXT | First onboarding date. | Synthetic activity feed |
+| sip_amount | REAL | Typical SIP amount. | Synthetic activity feed |
+| source_file | TEXT | Synthetic source label. | Synthetic activity feed |
 
 ## fact_performance
 Reserved for scheme performance sources when available.
