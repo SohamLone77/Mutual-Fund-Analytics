@@ -1,65 +1,45 @@
-============================================================
-DATA QUALITY SUMMARY REPORT
-Generated: 2026-06-25 17:38:27
+DATA QUALITY REPORT
 ============================================================
 
+File      : nav_118632_20260625.csv
+Rows      : 3,315
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : none
 
- nav_118632_20260625:
-   rows: 3315
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.9169406890869141
-   date_cols: []
+File      : nav_119092_20260625.csv
+Rows      : 3,582
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : none
 
- nav_119092_20260625:
-   rows: 3582
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.9053821563720703
-   date_cols: []
+File      : nav_119551_20260625.csv
+Rows      : 3,253
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : none
 
- nav_119551_20260625:
-   rows: 3253
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.9059982299804688
-   date_cols: []
+File      : nav_120503_20260625.csv
+Rows      : 3,324
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : 1 rows with NAV <= 0
 
- nav_120503_20260625:
-   rows: 3324
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.8465194702148438
-   date_cols: []
+File      : nav_120841_20260625.csv
+Rows      : 3,318
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : none
 
- nav_120841_20260625:
-   rows: 3318
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.8291702270507812
-   date_cols: []
+File      : nav_125497_20260625.csv
+Rows      : 3,108
+Columns   : 7
+Missing   : 0
+Duplicates: 0
+Anomalies : none
 
- nav_125497_20260625:
-   rows: 3108
-   columns: 5
-   missing_values: 0
-   duplicate_rows: 0
-   numeric_cols: 2
-   categorical_cols: 3
-   memory_usage: 0.7500228881835938
-   date_cols: []

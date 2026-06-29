@@ -1,0 +1,7 @@
+scheme_name,fund_house,cagr_3yr,cagr_5yr,expense_ratio,sharpe_ratio,alpha,beta,max_drawdown,rank_3yr_return,rank_sharpe,rank_alpha,rank_expense,rank_dd,score_3yr_return,score_sharpe,score_alpha,score_expense,score_dd,composite_score
+quant Mid Cap Fund - Growth Option - Direct Plan,quant Mutual Fund,0.1752906817088351,0.18012406223694488,1.0,0.690925509121361,0.010999,1.378617,-0.3342987466611876,1,2,2,3,2,100.0,80.0,80.0,60.0,80.0,84.0
+SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,0.14342357936173689,0.15498408815389553,1.0,1.1176416814135566,0.069335,1.336792,-0.4026012761687717,3,1,1,3,6,60.0,100.0,100.0,60.0,0.0,69.0
+Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Axis Mutual Fund,0.11654303683311884,0.08349404012887018,1.0,0.631468042502856,-0.003933,1.442164,-0.33509892369046657,4,3,4,3,3,40.0,60.0,40.0,60.0,60.0,50.0
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Nippon India Mutual Fund,0.15387627982661312,0.16270379434701265,1.0,0.5733812845189816,-0.015435,1.585155,-0.3996075381332732,2,4,5,3,5,80.0,40.0,20.0,60.0,20.0,47.0
+HDFC Money Market Fund - Growth Option - Direct Plan,HDFC Mutual Fund,0.07367439832042333,0.06562243173598215,1.0,0.349906475383935,0.00144,0.007303,-0.013923580128646426,5,5,3,3,1,20.0,20.0,60.0,60.0,100.0,44.0
+Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Aditya Birla Sun Life Mutual Fund,-0.0195387462410761,-0.0731764066096171,1.0,-0.6761582296687463,-0.068268,0.163401,-0.3665170175520131,6,6,6,3,4,0.0,0.0,0.0,60.0,40.0,12.0
