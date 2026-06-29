@@ -1,186 +1,167 @@
 #!/usr/bin/env python
 """
-Data Ingestion Module - Load and validate all CSV datasets
-Day 1 - Mutual Fund Analytics Project
+data_ingestion.py — Day 1 Deliverable
+======================================
+Load all raw NAV CSVs, validate structure & quality, produce data quality report.
+
+Usage:
+    python src/data_ingestion.py
 """
+from __future__ import annotations
 
 import os
-import pandas as pd
-import numpy as np
-from datetime import datetime
-import glob
 import json
+from pathlib import Path
 
-class DataIngestion:
-    """Handles loading and validating CSV data"""
-    
-    def __init__(self):
-        self.raw_data_path = 'data/raw'
-        self.processed_data_path = 'data/processed'
-        self.datasets = {}
-        self.quality_report = {}
-        
-        # Create directories if they don't exist
-        os.makedirs(self.raw_data_path, exist_ok=True)
-        os.makedirs(self.processed_data_path, exist_ok=True)
-        
-    def load_all_datasets(self):
-        """Load all CSV files from raw data directory"""
-        
-        csv_files = glob.glob(os.path.join(self.raw_data_path, '*.csv'))
-        
-        if not csv_files:
-            print("⚠️  No CSV files found in data/raw/")
-            print("   Please place your 10 CSV files in data/raw/")
-            return
-        
-        print(f"📁 Found {len(csv_files)} CSV files")
-        print("="*60)
-        
-        for file_path in csv_files:
-            filename = os.path.basename(file_path)
-            try:
-                # Load CSV
-                df = pd.read_csv(file_path)
-                
-                # Store in datasets dict
-                key = filename.replace('.csv', '')
-                self.datasets[key] = df
-                
-                # Print information
-                self._print_dataset_info(filename, df)
-                
-                # Collect quality metrics
-                self._collect_quality_metrics(key, df)
-                
-            except Exception as e:
-                print(f"❌ Error loading {filename}: {e}")
-        
-        return self.datasets
-    
-    def _print_dataset_info(self, filename, df):
-        """Print dataset information"""
-        print(f"\n📊 Dataset: {filename}")
-        print(f"   Shape: {df.shape[0]} rows x {df.shape[1]} columns")
-        print(f"   Columns: {', '.join(df.columns.tolist()[:5])}{'...' if len(df.columns) > 5 else ''}")
-        
-        # Check for missing values
-        missing = df.isnull().sum().sum()
-        if missing > 0:
-            print(f"   ⚠️  Missing values: {missing}")
-        
-        # Check data types
-        print(f"   Data types: {', '.join(str(dt) for dt in df.dtypes.unique())}")
-        
-        # Show sample
-        print("\n   First 2 rows:")
-        print(df.head(2).to_string(index=False)[:200] + "...")
-    
-    def _collect_quality_metrics(self, key, df):
-        """Collect data quality metrics"""
-        metrics = {
-            'rows': len(df),
-            'columns': len(df.columns),
-            'missing_values': df.isnull().sum().sum(),
-            'duplicate_rows': df.duplicated().sum(),
-            'numeric_cols': len(df.select_dtypes(include=[np.number]).columns),
-            'categorical_cols': len(df.select_dtypes(include=['object']).columns),
-            'memory_usage': df.memory_usage(deep=True).sum() / 1024**2  # MB
-        }
-        
-        # Check for date columns
-        date_cols = []
-        for col in df.columns:
-            if df[col].dtype == 'object':
-                try:
-                    pd.to_datetime(df[col])
-                    date_cols.append(col)
-                except:
-                    pass
-        metrics['date_cols'] = date_cols
-        
-        self.quality_report[key] = metrics
-    
-    def generate_quality_summary(self):
-        """Generate a data quality summary report"""
-        
-        if not self.quality_report:
-            print("⚠️  No datasets loaded. Run load_all_datasets() first.")
-            return
-        
-        print("\n" + "="*60)
-        print("📊 DATA QUALITY SUMMARY REPORT")
-        print("="*60)
-        
-        total_rows = 0
-        total_missing = 0
-        
-        for dataset, metrics in self.quality_report.items():
-            print(f"\n📁 {dataset}:")
-            print(f"   Rows: {metrics['rows']:,}")
-            print(f"   Columns: {metrics['columns']}")
-            print(f"   Missing values: {metrics['missing_values']:,}")
-            print(f"   Duplicate rows: {metrics['duplicate_rows']:,}")
-            print(f"   Numeric columns: {metrics['numeric_cols']}")
-            print(f"   Categorical columns: {metrics['categorical_cols']}")
-            if metrics['date_cols']:
-                print(f"   Date columns: {', '.join(metrics['date_cols'])}")
-            print(f"   Memory usage: {metrics['memory_usage']:.2f} MB")
-            
-            total_rows += metrics['rows']
-            total_missing += metrics['missing_values']
-        
-        # Summary statistics
-        print("\n" + "-"*60)
-        print(f"📊 TOTAL SUMMARY:")
-        print(f"   Total datasets: {len(self.quality_report)}")
-        print(f"   Total rows across all datasets: {total_rows:,}")
-        print(f"   Total missing values: {total_missing:,}")
-        print("="*60)
-        
-        # Save summary
-        self._save_quality_report()
-    
-    def _save_quality_report(self):
-        """Save quality report to file"""
-        report_path = 'reports/data_quality_report.txt'
-        os.makedirs('reports', exist_ok=True)
-        
-        with open(report_path, 'w') as f:
-            f.write("="*60 + "\n")
-            f.write("DATA QUALITY SUMMARY REPORT\n")
-            f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write("="*60 + "\n\n")
-            
-            for dataset, metrics in self.quality_report.items():
-                f.write(f"\n {dataset}:\n")
-                for key, value in metrics.items():
-                    f.write(f"   {key}: {value}\n")
-        
-        print(f"\n✅ Quality report saved to: {report_path}")
-    
-    def get_dataframe(self, name):
-        """Get a specific dataset by name"""
-        return self.datasets.get(name)
+import numpy as np
+import pandas as pd
 
-# ========== MAIN EXECUTION ==========
+ROOT       = Path(__file__).resolve().parents[1]
+RAW_DIR    = ROOT / "data" / "raw"
+REPORT_DIR = ROOT / "reports"
+REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
-def main():
-    """Main execution function"""
-    
-    print("🚀 Starting Data Ingestion Process...")
-    print("="*60)
-    
-    # Initialize ingestion
-    ingestion = DataIngestion()
-    
-    # Load all datasets
-    ingestion.load_all_datasets()
-    
-    # Generate quality summary
-    ingestion.generate_quality_summary()
-    
-    print("\n✅ Data Ingestion Complete!")
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def load_scheme_meta(csv_path: Path) -> dict:
+    """Read JSON sidecar for scheme metadata (fund_house, category, etc.)."""
+    json_path = csv_path.with_suffix(".json")
+    if not json_path.exists():
+        return {}
+    with json_path.open(encoding="utf-8") as f:
+        return json.load(f).get("meta", {})
+
+
+def inspect_dataset(df: pd.DataFrame, name: str) -> dict:
+    """Print shape / dtypes / head and return a quality metrics dict."""
+    print(f"\n{'='*60}")
+    print(f"Dataset : {name}")
+    print(f"Shape   : {df.shape[0]:,} rows x {df.shape[1]} columns")
+    print(f"Columns : {list(df.columns)}")
+    print("\ndtypes:")
+    print(df.dtypes.to_string())
+    print("\nHead (3 rows):")
+    print(df.head(3).to_string(index=False))
+
+    missing  = int(df.isnull().sum().sum())
+    dupes    = int(df.duplicated().sum())
+    neg_nav  = 0
+    anomalies: list[str] = []
+
+    if "nav" in df.columns:
+        neg_nav = int((pd.to_numeric(df["nav"], errors="coerce") <= 0).sum())
+        if neg_nav:
+            anomalies.append(f"{neg_nav} rows with NAV <= 0")
+
+    if missing:
+        anomalies.append(f"{missing} missing values")
+    if dupes:
+        anomalies.append(f"{dupes} duplicate rows")
+    if anomalies:
+        print(f"\n[WARN] Anomalies: {'; '.join(anomalies)}")
+    else:
+        print("\n[OK] No anomalies detected")
+
+    return {
+        "name":        name,
+        "rows":        df.shape[0],
+        "columns":     df.shape[1],
+        "missing":     missing,
+        "duplicates":  dupes,
+        "neg_nav":     neg_nav,
+        "anomalies":   "; ".join(anomalies) if anomalies else "none",
+    }
+
+
+# ── Main ─────────────────────────────────────────────────────────────────────
+
+def main() -> None:
+    csv_files = sorted(RAW_DIR.glob("nav_*.csv"))
+    if not csv_files:
+        print(f"No CSV files found in {RAW_DIR}")
+        return
+
+    print(f"Found {len(csv_files)} raw NAV files\n")
+
+    quality_rows: list[dict] = []
+
+    for csv_path in csv_files:
+        df = pd.read_csv(csv_path)
+
+        # Attach metadata from JSON sidecar
+        meta = load_scheme_meta(csv_path)
+        for field in ("scheme_name", "fund_house", "scheme_category", "scheme_type"):
+            if field not in df.columns:
+                df[field] = meta.get(field, "")
+
+        quality_rows.append(inspect_dataset(df, csv_path.name))
+
+    # ── Summary table ─────────────────────────────────────────────────────────
+    qdf = pd.DataFrame(quality_rows)
+    print(f"\n\n{'='*60}")
+    print("DATA QUALITY SUMMARY")
+    print('='*60)
+    print(qdf.to_string(index=False))
+
+    # ── Unique fund metadata ──────────────────────────────────────────────────
+    all_frames = []
+    for csv_path in csv_files:
+        df = pd.read_csv(csv_path)
+        meta = load_scheme_meta(csv_path)
+        for field in ("scheme_name", "fund_house", "scheme_category", "scheme_type"):
+            if field not in df.columns:
+                df[field] = meta.get(field, "")
+        all_frames.append(df[["fund_house", "scheme_category", "scheme_type", "scheme_name"]].drop_duplicates())
+
+    fund_master = pd.concat(all_frames, ignore_index=True).drop_duplicates()
+
+    print(f"\nUnique Fund Houses  : {fund_master['fund_house'].nunique()}")
+    print(f"Unique Categories   : {fund_master['scheme_category'].nunique()}")
+    print(f"Unique Scheme Types : {fund_master['scheme_type'].nunique()}")
+    print("\nFund master preview:")
+    print(fund_master.to_string(index=False))
+
+    # ── AMFI code validation ──────────────────────────────────────────────────
+    # Every amfi_code in fund_master should appear in NAV files
+    nav_codes = set()
+    for csv_path in csv_files:
+        df = pd.read_csv(csv_path)
+        col = "scheme_code" if "scheme_code" in df.columns else ("amfi_code" if "amfi_code" in df.columns else None)
+        if col:
+            nav_codes.update(df[col].dropna().astype(int).tolist())
+
+    # Codes embedded in filenames (e.g. nav_118632_*.csv)
+    filename_codes = set()
+    for p in csv_files:
+        parts = p.stem.split("_")
+        for part in parts:
+            if part.isdigit() and len(part) >= 5:
+                filename_codes.add(int(part))
+
+    print(f"\nAMFI codes found in NAV files   : {sorted(nav_codes)}")
+    print(f"AMFI codes extracted from names : {sorted(filename_codes)}")
+    missing_codes = filename_codes - nav_codes
+    if missing_codes:
+        print(f"[WARN] AMFI codes in filenames but not in data: {missing_codes}")
+    else:
+        print("[OK] All AMFI codes validated")
+
+    # ── Save quality report ───────────────────────────────────────────────────
+    report_path = REPORT_DIR / "data_quality_report.txt"
+    with report_path.open("w", encoding="utf-8") as f:
+        f.write("DATA QUALITY REPORT\n")
+        f.write("="*60 + "\n\n")
+        for row in quality_rows:
+            f.write(f"File      : {row['name']}\n")
+            f.write(f"Rows      : {row['rows']:,}\n")
+            f.write(f"Columns   : {row['columns']}\n")
+            f.write(f"Missing   : {row['missing']}\n")
+            f.write(f"Duplicates: {row['duplicates']}\n")
+            f.write(f"Anomalies : {row['anomalies']}\n\n")
+
+    print(f"\nQuality report saved -> {report_path}")
+
 
 if __name__ == "__main__":
     main()

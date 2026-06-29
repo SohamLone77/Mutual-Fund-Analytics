@@ -1,183 +1,153 @@
 #!/usr/bin/env python
 """
-Live NAV Fetch - Fetch mutual fund NAV data from API
-Day 1 - Mutual Fund Analytics Project
+live_nav_fetch.py — Day 1 Deliverable
+=======================================
+Fetch live NAV history for 6 key schemes from mfapi.in.
+Saves raw JSON + cleaned CSV per scheme, plus a summary CSV.
+
+Schemes fetched:
+    125497 — SBI Small Cap Direct
+    119551 — Aditya Birla Sun Life Banking & PSU Debt Direct
+    120503 — Axis ELSS Tax Saver Direct
+    118632 — Nippon India Large Cap Direct
+    119092 — HDFC Money Market Direct
+    120841 — quant Mid Cap Direct
+
+Usage:
+    python src/live_nav_fetch.py
 """
+from __future__ import annotations
 
-import requests
-import pandas as pd
 import json
-import os
-from datetime import datetime
 import time
+from datetime import datetime
+from pathlib import Path
 
-class NAVFetcher:
-    """Fetch live NAV data from mfapi.in"""
-    
-    def __init__(self):
-        self.base_url = "https://api.mfapi.in/mf"
-        self.raw_data_path = 'data/raw'
-        self.nav_data = {}
-        
-        # Key schemes to fetch
-        self.schemes = {
-            '125497': 'HDFC_Top_100_Direct',
-            '119551': 'SBI_Bluechip',
-            '120503': 'ICICI_Bluechip',
-            '118632': 'Nippon_Large_Cap',
-            '119092': 'Axis_Bluechip',
-            '120841': 'Kotak_Bluechip'
-        }
-        
-        os.makedirs(self.raw_data_path, exist_ok=True)
-    
-    def fetch_scheme_nav(self, scheme_code):
-        """Fetch NAV data for a single scheme"""
-        
-        try:
-            url = f"{self.base_url}/{scheme_code}"
-            response = requests.get(url, timeout=30)
-            
-            if response.status_code == 200:
-                data = response.json()
-                
-                # Extract metadata
-                meta = data.get('meta', {})
-                nav_data = data.get('data', [])
-                
-                return {
-                    'meta': meta,
-                    'nav_data': nav_data,
-                    'scheme_code': scheme_code
-                }
-            else:
-                print(f"❌ Error {response.status_code} for scheme {scheme_code}")
-                return None
-                
-        except requests.exceptions.RequestException as e:
-            print(f"❌ Request failed for {scheme_code}: {e}")
-            return None
-    
-    def fetch_all_schemes(self):
-        """Fetch NAV for all configured schemes"""
-        
-        print("📡 Fetching live NAV data...")
-        print("="*60)
-        
-        for code, name in self.schemes.items():
-            print(f"\n🔄 Fetching: {name} (Code: {code})")
-            
-            result = self.fetch_scheme_nav(code)
-            
-            if result:
-                self.nav_data[code] = result
-                
-                # Save raw JSON
-                self._save_raw_json(code, result)
-                
-                # Save as CSV
-                self._convert_to_csv(code, result)
-                
-                print(f"   ✅ Fetched {len(result['nav_data'])} NAV entries")
-            else:
-                print(f"   ⚠️  Failed to fetch {name}")
-            
-            # Rate limiting - be respectful to API
-            time.sleep(1)
-        
-        print("\n" + "="*60)
-        print(f"✅ Fetched {len(self.nav_data)} out of {len(self.schemes)} schemes")
-    
-    def _save_raw_json(self, code, data):
-        """Save raw JSON response"""
-        filename = f"{self.raw_data_path}/nav_{code}_{datetime.now().strftime('%Y%m%d')}.json"
-        
-        with open(filename, 'w') as f:
-            json.dump(data, f, indent=2)
-        
-        print(f"   📁 JSON saved: {os.path.basename(filename)}")
-    
-    def _convert_to_csv(self, code, data):
-        """Convert NAV data to CSV"""
-        
-        if not data['nav_data']:
-            print("   ⚠️  No NAV data to convert")
-            return
-        
-        # Convert to DataFrame
-        df = pd.DataFrame(data['nav_data'])
-        
-        # Clean and convert types
-        df['date'] = pd.to_datetime(df['date'], format='%d-%m-%Y')
-        df['nav'] = pd.to_numeric(df['nav'])
-        
-        # Add metadata columns
-        meta = data['meta']
-        df['scheme_code'] = code
-        df['scheme_name'] = meta.get('scheme_name', '')
-        df['fund_house'] = meta.get('fund_house', '')
-        
-        # Sort by date
-        df = df.sort_values('date')
-        
-        # Save to CSV
-        filename = f"{self.raw_data_path}/nav_{code}_{datetime.now().strftime('%Y%m%d')}.csv"
-        df.to_csv(filename, index=False)
-        
-        print(f"   📁 CSV saved: {os.path.basename(filename)}")
-        print(f"   📊 Date range: {df['date'].min().date()} to {df['date'].max().date()}")
-    
-    def get_nav_summary(self):
-        """Get summary of fetched NAV data"""
-        
-        summary = []
-        for code, data in self.nav_data.items():
-            meta = data.get('meta', {})
-            nav_data = data.get('nav_data', [])
-            
-            if nav_data:
-                df = pd.DataFrame(nav_data)
-                df['nav'] = pd.to_numeric(df['nav'])
-                
-                summary.append({
-                    'scheme_code': code,
-                    'scheme_name': meta.get('scheme_name', ''),
-                    'fund_house': meta.get('fund_house', ''),
-                    'total_entries': len(nav_data),
-                    'latest_nav': df.iloc[-1]['nav'],
-                    'latest_date': df.iloc[-1]['date'],
-                    'min_nav': df['nav'].min(),
-                    'max_nav': df['nav'].max()
-                })
-        
-        return pd.DataFrame(summary)
+import pandas as pd
+import requests
 
-# ========== MAIN EXECUTION ==========
+ROOT     = Path(__file__).resolve().parents[1]
+RAW_DIR  = ROOT / "data" / "raw"
+RPT_DIR  = ROOT / "reports"
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+RPT_DIR.mkdir(parents=True, exist_ok=True)
 
-def main():
-    """Main execution function"""
-    
-    print("🚀 Starting Live NAV Fetch Process...")
-    print("="*60)
-    
-    # Initialize fetcher
-    fetcher = NAVFetcher()
-    
-    # Fetch all schemes
-    fetcher.fetch_all_schemes()
-    
-    # Print summary
-    if fetcher.nav_data:
-        print("\n📊 NAV Fetch Summary:")
-        print("-"*60)
-        summary_df = fetcher.get_nav_summary()
+BASE_URL = "https://api.mfapi.in/mf"
+
+SCHEMES: dict[str, str] = {
+    "125497": "SBI Small Cap Direct",
+    "119551": "Aditya Birla Banking & PSU Debt Direct",
+    "120503": "Axis ELSS Tax Saver Direct",
+    "118632": "Nippon India Large Cap Direct",
+    "119092": "HDFC Money Market Direct",
+    "120841": "quant Mid Cap Direct",
+}
+
+
+# ── Core fetch ────────────────────────────────────────────────────────────────
+
+def fetch_scheme(amfi_code: str) -> dict | None:
+    """Fetch all NAV history for one scheme; returns parsed JSON or None."""
+    try:
+        response = requests.get(f"{BASE_URL}/{amfi_code}", timeout=30)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as exc:
+        print(f"  ERROR fetching {amfi_code}: {exc}")
+        return None
+
+
+def save_raw(amfi_code: str, payload: dict, date_tag: str) -> Path:
+    """Persist raw API response as JSON."""
+    path = RAW_DIR / f"nav_{amfi_code}_{date_tag}.json"
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    return path
+
+
+def payload_to_csv(amfi_code: str, payload: dict, date_tag: str) -> pd.DataFrame | None:
+    """Convert mfapi.in JSON payload to a clean DataFrame and save as CSV."""
+    nav_records = payload.get("data", [])
+    meta        = payload.get("meta", {})
+
+    if not nav_records:
+        print(f"  No NAV records returned for {amfi_code}")
+        return None
+
+    df = pd.DataFrame(nav_records)                        # columns: date, nav
+    df["date"]        = pd.to_datetime(df["date"], format="%d-%m-%Y", errors="coerce")
+    df["nav"]         = pd.to_numeric(df["nav"], errors="coerce")
+    df["amfi_code"]   = int(amfi_code)
+    df["scheme_name"] = meta.get("scheme_name", "")
+    df["fund_house"]  = meta.get("fund_house", "")
+    df["scheme_type"] = meta.get("scheme_type", "")
+    df["scheme_category"] = meta.get("scheme_category", "")
+
+    df = (df
+          .dropna(subset=["date", "nav"])
+          .query("nav > 0")
+          .sort_values("date")
+          .drop_duplicates(subset=["amfi_code", "date"])
+          .reset_index(drop=True))
+
+    path = RAW_DIR / f"nav_{amfi_code}_{date_tag}.csv"
+    df.to_csv(path, index=False)
+    return df
+
+
+# ── Main ─────────────────────────────────────────────────────────────────────
+
+def main() -> None:
+    date_tag = datetime.now().strftime("%Y%m%d")
+    summary_rows: list[dict] = []
+
+    print(f"Fetching NAV data from {BASE_URL}")
+    print(f"Date tag: {date_tag}\n")
+
+    for amfi_code, label in SCHEMES.items():
+        print(f"  {amfi_code}  {label}")
+        payload = fetch_scheme(amfi_code)
+
+        if payload is None:
+            continue
+
+        json_path = save_raw(amfi_code, payload, date_tag)
+        df        = payload_to_csv(amfi_code, payload, date_tag)
+
+        if df is None:
+            continue
+
+        meta = payload.get("meta", {})
+        summary_rows.append({
+            "amfi_code":      amfi_code,
+            "scheme_name":    meta.get("scheme_name", label),
+            "fund_house":     meta.get("fund_house", ""),
+            "total_entries":  len(df),
+            "date_from":      str(df["date"].min().date()),
+            "date_to":        str(df["date"].max().date()),
+            "latest_nav":     round(float(df["nav"].iloc[-1]), 4),
+            "min_nav":        round(float(df["nav"].min()), 4),
+            "max_nav":        round(float(df["nav"].max()), 4),
+        })
+
+        print(f"    Saved {len(df):,} rows  |  NAV range: "
+              f"{df['date'].min().date()} → {df['date'].max().date()}  |  "
+              f"Latest NAV: {df['nav'].iloc[-1]:.2f}")
+
+        time.sleep(0.8)   # respect API rate limit
+
+    # ── Summary CSV ───────────────────────────────────────────────────────────
+    if summary_rows:
+        summary_df = pd.DataFrame(summary_rows)
+        summary_path = RPT_DIR / "nav_fetch_summary.csv"
+        summary_df.to_csv(summary_path, index=False)
+
+        print(f"\nFetched {len(summary_rows)} / {len(SCHEMES)} schemes")
+        print(f"Summary saved → {summary_path}")
         print(summary_df.to_string(index=False))
-        
-        # Save summary
-        summary_df.to_csv('reports/nav_fetch_summary.csv', index=False)
-        print(f"\n✅ Summary saved to: reports/nav_fetch_summary.csv")
-    
-    print("\n✅ Live NAV Fetch Complete!")
+    else:
+        print("No data fetched — check network / API availability.")
+
 
 if __name__ == "__main__":
     main()
