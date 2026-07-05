@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 from __future__ import annotations
-import sys; sys.stdout.reconfigure(encoding="utf-8")
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except AttributeError:
+    pass
 """
 data_cleaning.py — Day 2 Deliverable
 ======================================
@@ -29,7 +33,7 @@ from sqlalchemy import create_engine, text
 ROOT          = Path(__file__).resolve().parents[1]
 RAW_DIR       = ROOT / "data" / "raw"
 PROCESSED_DIR = ROOT / "data" / "processed"
-DB_PATH       = ROOT / "bluestock_mf.db"
+DB_PATH       = ROOT / "data" / "db" / "bluestock_mf.db"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 # HDFC Money Market (amfi_code 119092) had a 100× unit consolidation on 2015-08-30.

@@ -1,7 +1,31 @@
+# Python
 .venv/
 .venv-1/
 __pycache__/
 *.pyc
+*.pyo
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Database (large binary — do not commit)
+*.db
+*.sqlite
+*.sqlite3
+
+# Node.js (from dashboard tooling)
+node_modules/
+package-lock.json
+
+# Temp / OS
 .DS_Store
+Thumbs.db
 *.log
+~$*
+
+# Duplicate/junk directories
+data/data/
+scratch/
+
+# OneDrive temp
+*.tmp

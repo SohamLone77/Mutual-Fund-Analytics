@@ -1,0 +1,3794 @@
+{
+  "funds": [
+    {
+      "fund_key": 1,
+      "amfi_code": 119551,
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Debt Scheme - Banking and PSU Fund"
+    },
+    {
+      "fund_key": 2,
+      "amfi_code": 120503,
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Equity Scheme - ELSS"
+    },
+    {
+      "fund_key": 3,
+      "amfi_code": 119092,
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Debt Scheme - Money Market Fund"
+    },
+    {
+      "fund_key": 4,
+      "amfi_code": 118632,
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Equity Scheme - Large Cap Fund"
+    },
+    {
+      "fund_key": 5,
+      "amfi_code": 125497,
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Equity Scheme - Small Cap Fund"
+    },
+    {
+      "fund_key": 6,
+      "amfi_code": 120841,
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "scheme_type": "Open Ended Schemes",
+      "scheme_category": "Equity Scheme - Mid Cap Fund"
+    }
+  ],
+  "performance": [
+    {
+      "performance_key": 1,
+      "fund_key": 1,
+      "date_key": 20260624,
+      "return_1m": 1.5359,
+      "return_3m": 2.0732,
+      "return_1y": -1.3447,
+      "return_3y": -1.9382,
+      "return_5y": -7.3176,
+      "expense_ratio": 1.0,
+      "volatility": 8.6946,
+      "sharpe_ratio": -0.6762,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "scheme_category": "Debt Scheme - Banking and PSU Fund"
+    },
+    {
+      "performance_key": 2,
+      "fund_key": 2,
+      "date_key": 20260624,
+      "return_1m": 2.2401,
+      "return_3m": 7.5076,
+      "return_1y": -0.2188,
+      "return_3y": 11.727,
+      "return_5y": 8.3494,
+      "expense_ratio": 1.0,
+      "volatility": 15.3066,
+      "sharpe_ratio": 0.6315,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "scheme_category": "Equity Scheme - ELSS"
+    },
+    {
+      "performance_key": 3,
+      "fund_key": 3,
+      "date_key": 20260624,
+      "return_1m": 0.9704,
+      "return_3m": 1.8707,
+      "return_1y": 6.2686,
+      "return_3y": 7.3854,
+      "return_5y": 6.5622,
+      "expense_ratio": 1.0,
+      "volatility": 0.5389,
+      "sharpe_ratio": 0.3499,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "scheme_category": "Debt Scheme - Money Market Fund"
+    },
+    {
+      "performance_key": 4,
+      "fund_key": 4,
+      "date_key": 20260624,
+      "return_1m": 1.2364,
+      "return_3m": 5.665,
+      "return_1y": 0.5035,
+      "return_3y": 15.4764,
+      "return_5y": 16.2704,
+      "expense_ratio": 1.0,
+      "volatility": 16.6829,
+      "sharpe_ratio": 0.5734,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "scheme_category": "Equity Scheme - Large Cap Fund"
+    },
+    {
+      "performance_key": 5,
+      "fund_key": 5,
+      "date_key": 20260624,
+      "return_1m": 5.9442,
+      "return_3m": 16.899,
+      "return_1y": 5.4409,
+      "return_3y": 14.5715,
+      "return_5y": 15.4984,
+      "expense_ratio": 1.0,
+      "volatility": 15.2002,
+      "sharpe_ratio": 1.1176,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "scheme_category": "Equity Scheme - Small Cap Fund"
+    },
+    {
+      "performance_key": 6,
+      "fund_key": 6,
+      "date_key": 20260624,
+      "return_1m": 0.2466,
+      "return_3m": 14.2462,
+      "return_1y": 2.9901,
+      "return_3y": 17.7101,
+      "return_5y": 18.0124,
+      "expense_ratio": 1.0,
+      "volatility": 15.4158,
+      "sharpe_ratio": 0.6909,
+      "anomaly_flag": 0,
+      "source_file": "performance_analytics",
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "scheme_category": "Equity Scheme - Mid Cap Fund"
+    }
+  ],
+  "aum_by_fund": [
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "aum_value": 6204.477
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "aum_value": 249.8412
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "aum_value": 205.0655
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "aum_value": 108.2944
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "aum_value": 106.1268
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "aum_value": 101.0387
+    }
+  ],
+  "aum_trend": [
+    {
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "avg_nav": 852.89,
+      "obs_count": 120,
+      "label": "Jan 2022"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "avg_nav": 827.33,
+      "obs_count": 118,
+      "label": "Feb 2022"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "avg_nav": 854.23,
+      "obs_count": 126,
+      "label": "Mar 2022"
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "month_name": "April",
+      "avg_nav": 832.92,
+      "obs_count": 112,
+      "label": "Apr 2022"
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "avg_nav": 830.82,
+      "obs_count": 124,
+      "label": "May 2022"
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "avg_nav": 856.49,
+      "obs_count": 132,
+      "label": "Jun 2022"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "month_name": "July",
+      "avg_nav": 861.72,
+      "obs_count": 126,
+      "label": "Jul 2022"
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "month_name": "August",
+      "avg_nav": 844.0,
+      "obs_count": 118,
+      "label": "Aug 2022"
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "avg_nav": 876.35,
+      "obs_count": 132,
+      "label": "Sep 2022"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "avg_nav": 878.7,
+      "obs_count": 108,
+      "label": "Oct 2022"
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "avg_nav": 884.53,
+      "obs_count": 126,
+      "label": "Nov 2022"
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "month_name": "December",
+      "avg_nav": 890.23,
+      "obs_count": 132,
+      "label": "Dec 2022"
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "avg_nav": 893.42,
+      "obs_count": 126,
+      "label": "Jan 2023"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "avg_nav": 896.11,
+      "obs_count": 120,
+      "label": "Feb 2023"
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "avg_nav": 873.62,
+      "obs_count": 124,
+      "label": "Mar 2023"
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "month_name": "April",
+      "avg_nav": 908.38,
+      "obs_count": 102,
+      "label": "Apr 2023"
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "avg_nav": 891.4,
+      "obs_count": 130,
+      "label": "May 2023"
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "avg_nav": 924.69,
+      "obs_count": 126,
+      "label": "Jun 2023"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "avg_nav": 933.58,
+      "obs_count": 126,
+      "label": "Jul 2023"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "avg_nav": 915.0,
+      "obs_count": 130,
+      "label": "Aug 2023"
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "month_name": "September",
+      "avg_nav": 984.54,
+      "obs_count": 115,
+      "label": "Sep 2023"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "avg_nav": 952.95,
+      "obs_count": 120,
+      "label": "Oct 2023"
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "avg_nav": 959.46,
+      "obs_count": 120,
+      "label": "Nov 2023"
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "month_name": "December",
+      "avg_nav": 969.78,
+      "obs_count": 120,
+      "label": "Dec 2023"
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "avg_nav": 977.37,
+      "obs_count": 126,
+      "label": "Jan 2024"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "avg_nav": 959.99,
+      "obs_count": 124,
+      "label": "Feb 2024"
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "avg_nav": 993.66,
+      "obs_count": 114,
+      "label": "Mar 2024"
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "avg_nav": 945.72,
+      "obs_count": 116,
+      "label": "Apr 2024"
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "avg_nav": 984.96,
+      "obs_count": 124,
+      "label": "May 2024"
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "month_name": "June",
+      "avg_nav": 1008.54,
+      "obs_count": 116,
+      "label": "Jun 2024"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "avg_nav": 1034.0,
+      "obs_count": 132,
+      "label": "Jul 2024"
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "month_name": "August",
+      "avg_nav": 1025.31,
+      "obs_count": 128,
+      "label": "Aug 2024"
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "avg_nav": 1019.03,
+      "obs_count": 124,
+      "label": "Sep 2024"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "avg_nav": 1050.53,
+      "obs_count": 132,
+      "label": "Oct 2024"
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "month_name": "November",
+      "avg_nav": 1034.99,
+      "obs_count": 110,
+      "label": "Nov 2024"
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "avg_nav": 1058.29,
+      "obs_count": 126,
+      "label": "Dec 2024"
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "avg_nav": 1057.94,
+      "obs_count": 138,
+      "label": "Jan 2025"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "avg_nav": 1025.3,
+      "obs_count": 112,
+      "label": "Feb 2025"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "avg_nav": 1062.58,
+      "obs_count": 120,
+      "label": "Mar 2025"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "avg_nav": 1044.14,
+      "obs_count": 112,
+      "label": "Apr 2025"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "avg_nav": 1043.57,
+      "obs_count": 126,
+      "label": "May 2025"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "avg_nav": 1097.49,
+      "obs_count": 126,
+      "label": "Jun 2025"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "avg_nav": 1105.06,
+      "obs_count": 138,
+      "label": "Jul 2025"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "month_name": "August",
+      "avg_nav": 1089.9,
+      "obs_count": 116,
+      "label": "Aug 2025"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "avg_nav": 1081.05,
+      "obs_count": 124,
+      "label": "Sep 2025"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "avg_nav": 1118.22,
+      "obs_count": 120,
+      "label": "Oct 2025"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "month_name": "November",
+      "avg_nav": 1107.14,
+      "obs_count": 116,
+      "label": "Nov 2025"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "avg_nav": 1126.96,
+      "obs_count": 132,
+      "label": "Dec 2025"
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "month_name": "January",
+      "avg_nav": 1111.55,
+      "obs_count": 122,
+      "label": "Jan 2026"
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "month_name": "February",
+      "avg_nav": 1084.07,
+      "obs_count": 120,
+      "label": "Feb 2026"
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "avg_nav": 1097.72,
+      "obs_count": 118,
+      "label": "Mar 2026"
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "avg_nav": 1109.55,
+      "obs_count": 118,
+      "label": "Apr 2026"
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "month_name": "May",
+      "avg_nav": 1131.84,
+      "obs_count": 116,
+      "label": "May 2026"
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "month_name": "June",
+      "avg_nav": 1155.79,
+      "obs_count": 108,
+      "label": "Jun 2026"
+    }
+  ],
+  "nav_monthly": [
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 121.2264,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 121.7348,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 113.0782,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 112.6801,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 105.3199,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 106.7948,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 107.2729,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 108.0334,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 109.0678,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 109.4442,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 110.3887,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 112.2328,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 112.6635,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 113.2955,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 113.9005,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 114.7532,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 115.5118,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 108.9501,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 109.7711,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 102.7632,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 103.0514,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 103.9547,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 6,
+      "month_name": "June",
+      "nav": 104.6136,
+      "label": "Jun 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 105.5109,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 107.225,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 107.8015,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 102.4261,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 103.1194,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 103.4542,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 104.8517,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 106.4272,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 107.5767,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 108.2167,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 108.7397,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 109.6768,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 110.3212,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 104.0116,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 104.5706,
+      "label": "Apr 2026"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 76.8741,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 74.4883,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 75.5061,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 69.1361,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 64.3604,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 73.174,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 73.9984,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 74.3607,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 68.3442,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 68.3805,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 67.5488,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 75.5768,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 79.0815,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 79.6969,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 78.33,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 78.7876,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 84.2614,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 87.6883,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 89.9973,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 94.7314,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 96.3277,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 95.3435,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 107.2541,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 8,
+      "month_name": "August",
+      "nav": 108.8172,
+      "label": "Aug 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 112.3338,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 105.222,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 11,
+      "month_name": "November",
+      "nav": 105.2243,
+      "label": "Nov 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 104.8418,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 101.3764,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 94.9501,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 101.5097,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 104.6451,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "nav": 106.9766,
+      "label": "May 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 110.6845,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 108.4305,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 8,
+      "month_name": "August",
+      "nav": 107.1217,
+      "label": "Aug 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 107.3134,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 111.0948,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 11,
+      "month_name": "November",
+      "nav": 111.8311,
+      "label": "Nov 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 110.2419,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2026,
+      "month": 1,
+      "month_name": "January",
+      "nav": 107.1897,
+      "label": "Jan 2026"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2026,
+      "month": 2,
+      "month_name": "February",
+      "nav": 108.9325,
+      "label": "Feb 2026"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 96.2753,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 105.2845,
+      "label": "Apr 2026"
+    },
+    {
+      "scheme_name": "Axis ELSS Tax Saver Fund - Direct Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "year": 2026,
+      "month": 5,
+      "month_name": "May",
+      "nav": 104.3083,
+      "label": "May 2026"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 4620.7865,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 4635.194,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 4654.7981,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 4672.3555,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 4691.8689,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 4753.1669,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 4775.3215,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 4803.702,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 4859.608,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 4883.0447,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 4921.7155,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 4987.2829,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 5016.9921,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 5048.9266,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 5076.7648,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 9,
+      "month_name": "September",
+      "nav": 5105.5501,
+      "label": "Sep 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 5134.2875,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 5163.9629,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 5226.6958,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 5260.251,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 5300.0371,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 5332.5376,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 5365.8097,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 5433.6933,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 5500.7013,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 5535.049,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 5600.5771,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 5634.8733,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 5666.3039,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 5716.824,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 5767.1752,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 5843.7929,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 5877.5109,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 5933.5373,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 5963.9425,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 6023.5454,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 6102.5131,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "HDFC Money Market Fund - Growth Option - Direct Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 6140.1614,
+      "label": "Apr 2026"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 54.7458,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 52.1261,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 54.959,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 52.9128,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 50.8161,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 57.2955,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 60.0929,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 62.0074,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 59.33,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 58.6303,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 59.0553,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 64.6705,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 67.5552,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 70.8107,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 70.7276,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 70.1022,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 73.9678,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 81.5148,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 84.0569,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 86.2324,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 89.0926,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 89.4481,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 99.038,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 101.4475,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 96.3789,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 95.6932,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 92.8772,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 86.9222,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 92.8702,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 95.8147,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 102.3501,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 100.5941,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 101.3,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 104.5102,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 105.3421,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 91.4539,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option",
+      "fund_house": "Nippon India Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 99.5502,
+      "label": "Apr 2026"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 115.1383,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 109.8735,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 113.3881,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 111.3985,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 107.3447,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 126.7384,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 127.6411,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 129.5097,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 124.3138,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 122.8701,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 121.7144,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 132.2913,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 138.0883,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 146.1582,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 150.2306,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 147.5626,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 157.4314,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 167.0853,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 169.9634,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 167.8136,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 181.4347,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 183.555,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 6,
+      "month_name": "June",
+      "nav": 197.8755,
+      "label": "Jun 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 208.4358,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 8,
+      "month_name": "August",
+      "nav": 208.4167,
+      "label": "Aug 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 213.8541,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 204.7065,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 11,
+      "month_name": "November",
+      "nav": 203.2306,
+      "label": "Nov 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 202.025,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 185.8927,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 167.2753,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 178.5628,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 181.8527,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "nav": 192.6784,
+      "label": "May 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 200.3178,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 197.489,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 8,
+      "month_name": "August",
+      "nav": 193.7537,
+      "label": "Aug 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 193.8822,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 199.8234,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 11,
+      "month_name": "November",
+      "nav": 194.979,
+      "label": "Nov 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 193.7724,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2026,
+      "month": 1,
+      "month_name": "January",
+      "nav": 183.301,
+      "label": "Jan 2026"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2026,
+      "month": 2,
+      "month_name": "February",
+      "nav": 184.7579,
+      "label": "Feb 2026"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 169.3706,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 193.4131,
+      "label": "Apr 2026"
+    },
+    {
+      "scheme_name": "SBI Small Cap Fund - Direct Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "year": 2026,
+      "month": 5,
+      "month_name": "May",
+      "nav": 193.6836,
+      "label": "May 2026"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nav": 128.1208,
+      "label": "Jan 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nav": 121.3314,
+      "label": "Feb 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nav": 135.6836,
+      "label": "Mar 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nav": 127.6661,
+      "label": "May 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nav": 119.9835,
+      "label": "Jun 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nav": 140.7102,
+      "label": "Sep 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nav": 144.5066,
+      "label": "Oct 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nav": 149.665,
+      "label": "Nov 2022"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nav": 144.6578,
+      "label": "Jan 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nav": 139.4266,
+      "label": "Feb 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nav": 139.1977,
+      "label": "Mar 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nav": 148.2521,
+      "label": "May 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nav": 156.8776,
+      "label": "Jun 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nav": 171.122,
+      "label": "Jul 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nav": 172.7257,
+      "label": "Aug 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nav": 176.4723,
+      "label": "Oct 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nav": 193.1175,
+      "label": "Nov 2023"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nav": 222.4922,
+      "label": "Jan 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nav": 228.3154,
+      "label": "Feb 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nav": 233.2192,
+      "label": "Mar 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nav": 252.92,
+      "label": "Apr 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nav": 260.132,
+      "label": "May 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nav": 278.0632,
+      "label": "Jul 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nav": 274.5914,
+      "label": "Sep 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nav": 253.5332,
+      "label": "Oct 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nav": 246.4922,
+      "label": "Dec 2024"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nav": 238.7459,
+      "label": "Jan 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nav": 209.9337,
+      "label": "Feb 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nav": 227.7234,
+      "label": "Mar 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nav": 236.4184,
+      "label": "Apr 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nav": 247.8273,
+      "label": "Jun 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nav": 240.1581,
+      "label": "Jul 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nav": 229.5282,
+      "label": "Sep 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nav": 241.241,
+      "label": "Oct 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nav": 235.5063,
+      "label": "Dec 2025"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2026,
+      "month": 3,
+      "month_name": "March",
+      "nav": 212.3571,
+      "label": "Mar 2026"
+    },
+    {
+      "scheme_name": "quant Mid Cap Fund - Growth Option - Direct Plan",
+      "fund_house": "quant Mutual Fund",
+      "year": 2026,
+      "month": 4,
+      "month_name": "April",
+      "nav": 240.5353,
+      "label": "Apr 2026"
+    }
+  ],
+  "transactions_by_state": [
+    {
+      "state": "Maharashtra",
+      "txn_count": 544,
+      "total_amount": 14021444.93
+    },
+    {
+      "state": "Andhra Pradesh",
+      "txn_count": 474,
+      "total_amount": 12430806.48
+    },
+    {
+      "state": "Karnataka",
+      "txn_count": 480,
+      "total_amount": 12218511.2
+    },
+    {
+      "state": "Telangana",
+      "txn_count": 483,
+      "total_amount": 12147852.86
+    },
+    {
+      "state": "Gujarat",
+      "txn_count": 476,
+      "total_amount": 11987936.59
+    },
+    {
+      "state": "Rajasthan",
+      "txn_count": 389,
+      "total_amount": 9909223.77
+    },
+    {
+      "state": "Tamil Nadu",
+      "txn_count": 374,
+      "total_amount": 9519169.4
+    },
+    {
+      "state": "Uttar Pradesh",
+      "txn_count": 348,
+      "total_amount": 8876582.19
+    },
+    {
+      "state": "Delhi",
+      "txn_count": 341,
+      "total_amount": 8595291.99
+    },
+    {
+      "state": "West Bengal",
+      "txn_count": 315,
+      "total_amount": 8005320.36
+    }
+  ],
+  "transaction_types": [
+    {
+      "transaction_type": "LUMPSUM",
+      "count": 747,
+      "total": 27405234.82
+    },
+    {
+      "transaction_type": "SIP",
+      "count": 3477,
+      "total": 80306904.95
+    }
+  ],
+  "age_sip": [
+    {
+      "age_group": "18-25",
+      "avg_sip_amount": 23203.14,
+      "txn_count": 173
+    },
+    {
+      "age_group": "26-35",
+      "avg_sip_amount": 23236.97,
+      "txn_count": 854
+    },
+    {
+      "age_group": "36-45",
+      "avg_sip_amount": 23170.14,
+      "txn_count": 1060
+    },
+    {
+      "age_group": "46-55",
+      "avg_sip_amount": 22793.42,
+      "txn_count": 700
+    },
+    {
+      "age_group": "56-65",
+      "avg_sip_amount": 22939.5,
+      "txn_count": 445
+    },
+    {
+      "age_group": "65+",
+      "avg_sip_amount": 23365.58,
+      "txn_count": 245
+    }
+  ],
+  "monthly_volume": [
+    {
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "txn_count": 88,
+      "total_amount": 1496949.13,
+      "sip_amount": 1073262.07,
+      "label": "Jan 2022"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "txn_count": 88,
+      "total_amount": 1483990.2,
+      "sip_amount": 1054033.88,
+      "label": "Feb 2022"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "txn_count": 88,
+      "total_amount": 1564042.57,
+      "sip_amount": 1104937.69,
+      "label": "Mar 2022"
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "month_name": "April",
+      "txn_count": 88,
+      "total_amount": 1583867.87,
+      "sip_amount": 1161008.2,
+      "label": "Apr 2022"
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "txn_count": 88,
+      "total_amount": 1573056.87,
+      "sip_amount": 1123220.92,
+      "label": "May 2022"
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "txn_count": 88,
+      "total_amount": 1637889.26,
+      "sip_amount": 1234818.61,
+      "label": "Jun 2022"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "month_name": "July",
+      "txn_count": 88,
+      "total_amount": 1648145.73,
+      "sip_amount": 1260152.41,
+      "label": "Jul 2022"
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "month_name": "August",
+      "txn_count": 88,
+      "total_amount": 1663514.84,
+      "sip_amount": 1302759.15,
+      "label": "Aug 2022"
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "txn_count": 88,
+      "total_amount": 1666174.21,
+      "sip_amount": 1340269.12,
+      "label": "Sep 2022"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "txn_count": 88,
+      "total_amount": 1757611.91,
+      "sip_amount": 1319140.79,
+      "label": "Oct 2022"
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "txn_count": 88,
+      "total_amount": 1845856.46,
+      "sip_amount": 1303162.21,
+      "label": "Nov 2022"
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "month_name": "December",
+      "txn_count": 88,
+      "total_amount": 1768564.7,
+      "sip_amount": 1398228.35,
+      "label": "Dec 2022"
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "txn_count": 88,
+      "total_amount": 1845552.16,
+      "sip_amount": 1357983.91,
+      "label": "Jan 2023"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "txn_count": 88,
+      "total_amount": 1980110.01,
+      "sip_amount": 1321522.72,
+      "label": "Feb 2023"
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "txn_count": 88,
+      "total_amount": 1882405.09,
+      "sip_amount": 1390357.06,
+      "label": "Mar 2023"
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "month_name": "April",
+      "txn_count": 88,
+      "total_amount": 2046377.66,
+      "sip_amount": 1406071.71,
+      "label": "Apr 2023"
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "txn_count": 88,
+      "total_amount": 2035299.63,
+      "sip_amount": 1450702.34,
+      "label": "May 2023"
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "txn_count": 88,
+      "total_amount": 2068977.78,
+      "sip_amount": 1430664.56,
+      "label": "Jun 2023"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "txn_count": 88,
+      "total_amount": 2092935.92,
+      "sip_amount": 1487846.27,
+      "label": "Jul 2023"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "txn_count": 88,
+      "total_amount": 2133397.27,
+      "sip_amount": 1484382.2,
+      "label": "Aug 2023"
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "month_name": "September",
+      "txn_count": 88,
+      "total_amount": 2087573.78,
+      "sip_amount": 1660968.15,
+      "label": "Sep 2023"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "txn_count": 88,
+      "total_amount": 2131692.7,
+      "sip_amount": 1677462.54,
+      "label": "Oct 2023"
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "txn_count": 88,
+      "total_amount": 2208979.5,
+      "sip_amount": 1705299.51,
+      "label": "Nov 2023"
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "month_name": "December",
+      "txn_count": 88,
+      "total_amount": 2142629.38,
+      "sip_amount": 1783767.55,
+      "label": "Dec 2023"
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "txn_count": 88,
+      "total_amount": 2229509.27,
+      "sip_amount": 1650754.3,
+      "label": "Jan 2024"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "txn_count": 88,
+      "total_amount": 2201289.97,
+      "sip_amount": 1796300.41,
+      "label": "Feb 2024"
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "txn_count": 88,
+      "total_amount": 2258698.08,
+      "sip_amount": 1810426.24,
+      "label": "Mar 2024"
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "txn_count": 88,
+      "total_amount": 2272385.08,
+      "sip_amount": 1912149.76,
+      "label": "Apr 2024"
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "txn_count": 88,
+      "total_amount": 2414629.91,
+      "sip_amount": 1784061.29,
+      "label": "May 2024"
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "month_name": "June",
+      "txn_count": 88,
+      "total_amount": 2423001.03,
+      "sip_amount": 1783935.75,
+      "label": "Jun 2024"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "txn_count": 88,
+      "total_amount": 2474226.8,
+      "sip_amount": 1793015.37,
+      "label": "Jul 2024"
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "month_name": "August",
+      "txn_count": 88,
+      "total_amount": 2456331.6,
+      "sip_amount": 2007091.64,
+      "label": "Aug 2024"
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "txn_count": 88,
+      "total_amount": 2502680.36,
+      "sip_amount": 1945281.96,
+      "label": "Sep 2024"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "txn_count": 88,
+      "total_amount": 2640280.83,
+      "sip_amount": 1724526.39,
+      "label": "Oct 2024"
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "month_name": "November",
+      "txn_count": 88,
+      "total_amount": 2539143.09,
+      "sip_amount": 2037802.12,
+      "label": "Nov 2024"
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "txn_count": 88,
+      "total_amount": 2800367.24,
+      "sip_amount": 1700088.32,
+      "label": "Dec 2024"
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "txn_count": 88,
+      "total_amount": 2765455.69,
+      "sip_amount": 1807920.06,
+      "label": "Jan 2025"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "txn_count": 88,
+      "total_amount": 2839755.44,
+      "sip_amount": 1803323.69,
+      "label": "Feb 2025"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "txn_count": 88,
+      "total_amount": 2647510.77,
+      "sip_amount": 2152926.86,
+      "label": "Mar 2025"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "txn_count": 88,
+      "total_amount": 2599960.8,
+      "sip_amount": 2280014.84,
+      "label": "Apr 2025"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "txn_count": 88,
+      "total_amount": 2844130.09,
+      "sip_amount": 2016874.21,
+      "label": "May 2025"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "txn_count": 88,
+      "total_amount": 2826506.38,
+      "sip_amount": 2075809.85,
+      "label": "Jun 2025"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "txn_count": 88,
+      "total_amount": 2925804.26,
+      "sip_amount": 2165771.96,
+      "label": "Jul 2025"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "month_name": "August",
+      "txn_count": 88,
+      "total_amount": 2937775.46,
+      "sip_amount": 2136506.9,
+      "label": "Aug 2025"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "txn_count": 88,
+      "total_amount": 2825579.49,
+      "sip_amount": 2307202.43,
+      "label": "Sep 2025"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "txn_count": 88,
+      "total_amount": 2947441.4,
+      "sip_amount": 2213132.12,
+      "label": "Oct 2025"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "month_name": "November",
+      "txn_count": 88,
+      "total_amount": 2988772.09,
+      "sip_amount": 2256512.26,
+      "label": "Nov 2025"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "txn_count": 88,
+      "total_amount": 3005310.01,
+      "sip_amount": 2313454.3,
+      "label": "Dec 2025"
+    }
+  ],
+  "nifty_monthly": [
+    {
+      "year": 2022,
+      "month": 1,
+      "month_name": "January",
+      "nifty_close": 18308.1,
+      "label": "Jan 2022"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "month_name": "February",
+      "nifty_close": 17780.0,
+      "label": "Feb 2022"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "month_name": "March",
+      "nifty_close": 17498.25,
+      "label": "Mar 2022"
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "month_name": "April",
+      "nifty_close": 18053.4,
+      "label": "Apr 2022"
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "nifty_close": 17069.1,
+      "label": "May 2022"
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "month_name": "June",
+      "nifty_close": 16628.0,
+      "label": "Jun 2022"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "month_name": "July",
+      "nifty_close": 17158.25,
+      "label": "Jul 2022"
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "month_name": "August",
+      "nifty_close": 17956.5,
+      "label": "Aug 2022"
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "month_name": "September",
+      "nifty_close": 18070.05,
+      "label": "Sep 2022"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "month_name": "October",
+      "nifty_close": 18012.2,
+      "label": "Oct 2022"
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "month_name": "November",
+      "nifty_close": 18758.35,
+      "label": "Nov 2022"
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "month_name": "December",
+      "nifty_close": 18812.5,
+      "label": "Dec 2022"
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "month_name": "January",
+      "nifty_close": 18232.55,
+      "label": "Jan 2023"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "month_name": "February",
+      "nifty_close": 18035.85,
+      "label": "Feb 2023"
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "month_name": "March",
+      "nifty_close": 17754.4,
+      "label": "Mar 2023"
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "month_name": "April",
+      "nifty_close": 18065.0,
+      "label": "Apr 2023"
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "nifty_close": 18633.85,
+      "label": "May 2023"
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "month_name": "June",
+      "nifty_close": 19189.05,
+      "label": "Jun 2023"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "month_name": "July",
+      "nifty_close": 19979.15,
+      "label": "Jul 2023"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "month_name": "August",
+      "nifty_close": 19733.55,
+      "label": "Aug 2023"
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "month_name": "September",
+      "nifty_close": 20192.35,
+      "label": "Sep 2023"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "month_name": "October",
+      "nifty_close": 19811.5,
+      "label": "Oct 2023"
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "month_name": "November",
+      "nifty_close": 20133.15,
+      "label": "Nov 2023"
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "month_name": "December",
+      "nifty_close": 21778.7,
+      "label": "Dec 2023"
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "month_name": "January",
+      "nifty_close": 22097.45,
+      "label": "Jan 2024"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "month_name": "February",
+      "nifty_close": 22217.45,
+      "label": "Feb 2024"
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "month_name": "March",
+      "nifty_close": 22493.55,
+      "label": "Mar 2024"
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "month_name": "April",
+      "nifty_close": 22753.8,
+      "label": "Apr 2024"
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "nifty_close": 22967.65,
+      "label": "May 2024"
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "month_name": "June",
+      "nifty_close": 24044.5,
+      "label": "Jun 2024"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "month_name": "July",
+      "nifty_close": 24951.15,
+      "label": "Jul 2024"
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "month_name": "August",
+      "nifty_close": 25235.9,
+      "label": "Aug 2024"
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "month_name": "September",
+      "nifty_close": 26216.05,
+      "label": "Sep 2024"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "month_name": "October",
+      "nifty_close": 25796.9,
+      "label": "Oct 2024"
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "month_name": "November",
+      "nifty_close": 24484.05,
+      "label": "Nov 2024"
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "month_name": "December",
+      "nifty_close": 24768.3,
+      "label": "Dec 2024"
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "month_name": "January",
+      "nifty_close": 24188.65,
+      "label": "Jan 2025"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "month_name": "February",
+      "nifty_close": 23739.25,
+      "label": "Feb 2025"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "month_name": "March",
+      "nifty_close": 23668.65,
+      "label": "Mar 2025"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "month_name": "April",
+      "nifty_close": 24335.95,
+      "label": "Apr 2025"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "nifty_close": 25062.1,
+      "label": "May 2025"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "month_name": "June",
+      "nifty_close": 25637.8,
+      "label": "Jun 2025"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "month_name": "July",
+      "nifty_close": 25541.8,
+      "label": "Jul 2025"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "month_name": "August",
+      "nifty_close": 25083.75,
+      "label": "Aug 2025"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "month_name": "September",
+      "nifty_close": 25423.6,
+      "label": "Sep 2025"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "month_name": "October",
+      "nifty_close": 26053.9,
+      "label": "Oct 2025"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "month_name": "November",
+      "nifty_close": 26215.55,
+      "label": "Nov 2025"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "month_name": "December",
+      "nifty_close": 26186.45,
+      "label": "Dec 2025"
+    }
+  ],
+  "category_inflow": [
+    {
+      "scheme_category": "Debt Scheme - Banking and PSU Fund",
+      "year": 2022,
+      "inflow": 2838016.34
+    },
+    {
+      "scheme_category": "Debt Scheme - Banking and PSU Fund",
+      "year": 2023,
+      "inflow": 2855716.55
+    },
+    {
+      "scheme_category": "Debt Scheme - Banking and PSU Fund",
+      "year": 2024,
+      "inflow": 3966270.49
+    },
+    {
+      "scheme_category": "Debt Scheme - Banking and PSU Fund",
+      "year": 2025,
+      "inflow": 4780564.54
+    },
+    {
+      "scheme_category": "Debt Scheme - Money Market Fund",
+      "year": 2022,
+      "inflow": 2430378.7
+    },
+    {
+      "scheme_category": "Debt Scheme - Money Market Fund",
+      "year": 2023,
+      "inflow": 3061117.5
+    },
+    {
+      "scheme_category": "Debt Scheme - Money Market Fund",
+      "year": 2024,
+      "inflow": 3582342.49
+    },
+    {
+      "scheme_category": "Debt Scheme - Money Market Fund",
+      "year": 2025,
+      "inflow": 4040763.28
+    },
+    {
+      "scheme_category": "Equity Scheme - ELSS",
+      "year": 2022,
+      "inflow": 2460244.22
+    },
+    {
+      "scheme_category": "Equity Scheme - ELSS",
+      "year": 2023,
+      "inflow": 3262007.62
+    },
+    {
+      "scheme_category": "Equity Scheme - ELSS",
+      "year": 2024,
+      "inflow": 3863050.47
+    },
+    {
+      "scheme_category": "Equity Scheme - ELSS",
+      "year": 2025,
+      "inflow": 3827616.12
+    },
+    {
+      "scheme_category": "Equity Scheme - Large Cap Fund",
+      "year": 2022,
+      "inflow": 2321504.14
+    },
+    {
+      "scheme_category": "Equity Scheme - Large Cap Fund",
+      "year": 2023,
+      "inflow": 3326045.02
+    },
+    {
+      "scheme_category": "Equity Scheme - Large Cap Fund",
+      "year": 2024,
+      "inflow": 3405963.61
+    },
+    {
+      "scheme_category": "Equity Scheme - Large Cap Fund",
+      "year": 2025,
+      "inflow": 4402055.31
+    },
+    {
+      "scheme_category": "Equity Scheme - Mid Cap Fund",
+      "year": 2022,
+      "inflow": 2285564.5
+    },
+    {
+      "scheme_category": "Equity Scheme - Mid Cap Fund",
+      "year": 2023,
+      "inflow": 2897283.39
+    },
+    {
+      "scheme_category": "Equity Scheme - Mid Cap Fund",
+      "year": 2024,
+      "inflow": 3648465.62
+    },
+    {
+      "scheme_category": "Equity Scheme - Mid Cap Fund",
+      "year": 2025,
+      "inflow": 3703884.58
+    },
+    {
+      "scheme_category": "Equity Scheme - Small Cap Fund",
+      "year": 2022,
+      "inflow": 2339285.5
+    },
+    {
+      "scheme_category": "Equity Scheme - Small Cap Fund",
+      "year": 2023,
+      "inflow": 2754858.44
+    },
+    {
+      "scheme_category": "Equity Scheme - Small Cap Fund",
+      "year": 2024,
+      "inflow": 3479340.87
+    },
+    {
+      "scheme_category": "Equity Scheme - Small Cap Fund",
+      "year": 2025,
+      "inflow": 4774565.65
+    }
+  ],
+  "kpi": {
+    "total_sip_lakh": 803.07,
+    "unique_investors": 250,
+    "total_transactions": 3477
+  }
+}
