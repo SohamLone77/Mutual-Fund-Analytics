@@ -57,7 +57,7 @@ st.markdown("""
         color: #0f172a;
     }
     </style>
-""", unsafe_allowed_html=True)
+""", unsafe_allow_html=True)
 
 # Database Connection Helper
 DB_PATH = Path(__file__).resolve().parent.parent / "data" / "db" / "bluestock_mf.db"
@@ -142,8 +142,8 @@ investors = load_dim_investors()
 nifty = load_nifty50()
 
 # Sidebar Navigation Panel
-st.sidebar.markdown("<h2 style='color:#38bdf8; text-align:center;'>Bluestock Fintech</h2>", unsafe_allowed_html=True)
-st.sidebar.markdown("<p style='color:#94a3b8; text-align:center; font-size:14px;'>Mutual Fund Analytics Dashboard</p>", unsafe_allowed_html=True)
+st.sidebar.markdown("<h2 style='color:#38bdf8; text-align:center;'>Bluestock Fintech</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='color:#94a3b8; text-align:center; font-size:14px;'>Mutual Fund Analytics Dashboard</p>", unsafe_allow_html=True)
 st.sidebar.write("---")
 
 page = st.sidebar.radio(
@@ -169,28 +169,28 @@ if page == "📊 Industry & AUM Overview":
                 <div class='kpi-title'>Total Tracked AUM</div>
                 <div class='kpi-value'>₹488.1 Cr</div>
             </div>
-        """, unsafe_allowed_html=True)
+        """, unsafe_allow_html=True)
     with kpi_col2:
         st.markdown("""
             <div class='kpi-card' style='border-bottom: 4px solid #10b981;'>
                 <div class='kpi-title'>Tracked Folios</div>
                 <div class='kpi-value'>250</div>
             </div>
-        """, unsafe_allowed_html=True)
+        """, unsafe_allow_html=True)
     with kpi_col3:
         st.markdown("""
             <div class='kpi-card' style='border-bottom: 4px solid #f59e0b;'>
                 <div class='kpi-title'>Total Transactions</div>
                 <div class='kpi-value'>4,224</div>
             </div>
-        """, unsafe_allowed_html=True)
+        """, unsafe_allow_html=True)
     with kpi_col4:
         st.markdown("""
             <div class='kpi-card' style='border-bottom: 4px solid #ec4899;'>
                 <div class='kpi-title'>Tracked Schemes</div>
                 <div class='kpi-value'>6</div>
             </div>
-        """, unsafe_allowed_html=True)
+        """, unsafe_allow_html=True)
 
     st.write("")
     st.write("")
@@ -297,12 +297,12 @@ elif page == "📈 Fund Performance Scorecard":
             filtered_perf,
             x='return_1y',
             y='volatility',
-            size='sharpe_ratio',
-            color='scheme_name',
+            color='sharpe_ratio',
             hover_name='scheme_name',
-            labels={'return_1y': 'Annualized Return (%)', 'volatility': 'Annualized Volatility (%)'},
-            size_max=30
+            labels={'return_1y': 'Annualized Return (%)', 'volatility': 'Annualized Volatility (%)', 'sharpe_ratio': 'Sharpe Ratio'},
+            color_continuous_scale='viridis'
         )
+        fig_scatter.update_traces(marker=dict(size=14))
         fig_scatter.update_layout(template="plotly_white")
         st.plotly_chart(fig_scatter, use_container_width=True)
 
