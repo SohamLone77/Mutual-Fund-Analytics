@@ -1,7 +1,7 @@
 scheme_name,fund_house,CAGR_3yr (%),CAGR_5yr (%),Sharpe_Ratio,Sortino_Ratio,Alpha_ann,Beta,R2,Max_Drawdown (%),expense_ratio,score_return,score_sharpe,score_alpha,score_expense,score_dd,Composite_Score
-quant Mid Cap Fund - Growth Option - Direct Plan,quant Mutual Fund,17.53,18.01,0.6223,0.8489,-0.013039,1.4027,0.768,-33.43,1.0,100.0,80.0,60.0,50.0,80.0,79.0
-SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,14.34,15.5,1.0395,1.4229,0.043404,1.3633,0.7714,-40.26,1.0,60.0,100.0,80.0,50.0,0.0,64.0
-HDFC Money Market Fund - Growth Option - Direct Plan,HDFC Mutual Fund,7.37,6.56,0.1627,0.311,0.065051,0.0068,0.0136,-1.39,1.0,20.0,20.0,100.0,50.0,100.0,51.0
-Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Axis Mutual Fund,11.65,8.35,0.5655,0.7747,-0.029736,1.4659,0.8495,-33.51,1.0,40.0,60.0,20.0,50.0,60.0,45.0
-Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Nippon India Mutual Fund,15.39,16.27,0.5116,0.6959,-0.048862,1.6134,0.8684,-39.96,1.0,80.0,40.0,0.0,50.0,20.0,42.0
-Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Aditya Birla Sun Life Mutual Fund,-1.95,-7.32,-0.7227,-0.8016,-0.013703,0.1591,0.0317,-36.65,1.0,0.0,0.0,40.0,50.0,40.0,19.0
+quant Mid Cap Fund - Growth Option - Direct Plan,quant Mutual Fund,17.53,18.01,0.6223,0.8489,-0.014045,1.413,0.7746,-33.43,1.0,100.0,80.0,40.0,50.0,80.0,75.0
+SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,14.34,15.5,1.0395,1.4229,0.042547,1.372,0.7764,-40.26,1.0,60.0,100.0,80.0,50.0,0.0,64.0
+HDFC Money Market Fund - Growth Option - Direct Plan,HDFC Mutual Fund,7.37,6.56,0.1627,0.311,0.065056,0.0068,0.0134,-1.39,1.0,20.0,20.0,100.0,50.0,100.0,51.0
+Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Axis Mutual Fund,11.65,8.35,0.5655,0.7747,-0.03048,1.4741,0.8538,-33.51,1.0,40.0,60.0,20.0,50.0,60.0,45.0
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Nippon India Mutual Fund,15.39,16.27,0.5116,0.6959,-0.04986,1.6239,0.8744,-39.96,1.0,80.0,40.0,0.0,50.0,20.0,42.0
+Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Aditya Birla Sun Life Mutual Fund,-1.95,-7.32,-0.8783,-0.8904,-0.010176,0.1218,0.0264,-36.65,1.0,0.0,0.0,60.0,50.0,40.0,23.0

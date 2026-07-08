@@ -101,6 +101,13 @@ class NAVCleaner:
             pre_split = df["date"] < HDFC_SPLIT_DATE
             df.loc[pre_split, "nav"] = df.loc[pre_split, "nav"] * 100
 
+        # Fix Aditya Birla NAV anomaly typo on 2024-06-24 (AMFI 119551)
+        if df["amfi_code"].iloc[0] == 119551:
+            target_date = pd.Timestamp("2024-06-24")
+            idx = df[df["date"] == target_date].index
+            if not idx.empty:
+                df.loc[idx, "nav"] = 104.5059
+
         df["previous_nav"]   = df.groupby("amfi_code")["nav"].shift(1)
         df["nav_change"]     = df["nav"] - df["previous_nav"]
         df["nav_return_pct"] = np.where(
