@@ -694,10 +694,14 @@ elif page == "⚠️ SIP Continuity & Gaps":
                         return 'background-color: #fee2e2; color: #991b1b; font-weight:600;'
                     return 'background-color: #dcfce7; color: #166534; font-weight:600;'
 
-                st.dataframe(
-                    gap_df.style.map(highlight_status, subset=['Status']),
-                    use_container_width=True
-                )
+                # Pandas < 2.1 uses applymap; >= 2.1 renamed it to map
+                styler = gap_df.style
+                try:
+                    styled_df = styler.map(highlight_status, subset=['Status'])
+                except AttributeError:
+                    styled_df = styler.applymap(highlight_status, subset=['Status'])
+
+                st.dataframe(styled_df, use_container_width=True)
     else:
         st.info("Transaction data not available.")
 
