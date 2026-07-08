@@ -14,10 +14,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ── Premium CSS Styling with Google Fonts ─────────────────────────────────────
-st.markdown("""
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+# ── Google Fonts (must be separate from style block) ────────────────────────
+st.markdown(
+    '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">',
+    unsafe_allow_html=True
+)
+
+# ── Premium CSS Styling ───────────────────────────────────────────────────────
+st.markdown("""<style>
     /* ── Base ── */
     .stApp {
         background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
@@ -106,7 +110,7 @@ st.markdown("""
     }
 
     /* ── Data Tables ── */
-    .stDataFrame {
+    div[data-testid="stDataFrame"] {
         border-radius: 12px !important;
         overflow: hidden !important;
         border: 1px solid #e2e8f0 !important;
@@ -210,12 +214,13 @@ def load_fact_nav():
 @st.cache_data
 def load_fact_transactions():
     if conn is None: return pd.DataFrame()
+    # Note: fact_transactions already contains state column; do NOT join dim_investor
+    # here as t.* + i.state creates duplicate 'state' causing groupby crash
     return pd.read_sql_query("""
-        SELECT f.scheme_name, d.calendar_date, t.*, i.state, i.age_group
+        SELECT f.scheme_name, d.calendar_date, t.*
         FROM fact_transactions t
         JOIN dim_fund f ON f.fund_key = t.fund_key
         JOIN dim_date d ON d.date_key = t.transaction_date_key
-        LEFT JOIN dim_investor i ON i.investor_id = t.investor_id
         ORDER BY d.calendar_date
     """, conn, parse_dates=["calendar_date"])
 
@@ -342,14 +347,12 @@ if page == "📊 Industry & AUM Overview":
             fig_aum = px.bar(
                 aum_clean,
                 x='scheme_short', y='aum_value',
-                labels={'scheme_short': 'Scheme', 'aum_value': 'AUM (₹ Cr)'},
+                labels={'scheme_short': 'Scheme', 'aum_value': 'AUM (\u20b9 Cr)'},
                 color='scheme_short',
-                color_discrete_sequence=px.colors.qualitative.Plotly,
-                text_auto='.1f'
+                color_discrete_sequence=px.colors.qualitative.Plotly
             )
             fig_aum.update_layout(showlegend=False, template="plotly_white",
                                   xaxis_tickangle=-30, margin=dict(t=10, b=60))
-            fig_aum.update_traces(textposition='outside')
             st.plotly_chart(fig_aum, use_container_width=True)
         else:
             st.info("No AUM data available.")
@@ -505,14 +508,12 @@ elif page == "👥 Investor Demographics":
                 fig_state = px.bar(
                     state_inflows.head(10),
                     x='amount', y='state', orientation='h',
-                    labels={'amount': 'Total Inflows (₹)', 'state': 'State'},
+                    labels={'amount': 'Total Inflows (\u20b9)', 'state': 'State'},
                     color='amount',
-                    color_continuous_scale='Blues',
-                    text_auto='.2s'
+                    color_continuous_scale='Blues'
                 )
                 fig_state.update_layout(showlegend=False, template="plotly_white",
                                         coloraxis_showscale=False, margin=dict(t=10))
-                fig_state.update_traces(textposition='outside')
                 st.plotly_chart(fig_state, use_container_width=True)
             else:
                 st.info("State data not available in transactions.")
@@ -543,14 +544,12 @@ elif page == "👥 Investor Demographics":
             age_sip = investors.groupby('age_group')['sip_amount'].mean().reset_index()
             fig_age = px.bar(
                 age_sip, x='age_group', y='sip_amount',
-                labels={'age_group': 'Age Group', 'sip_amount': 'Avg SIP Amount (₹)'},
+                labels={'age_group': 'Age Group', 'sip_amount': 'Avg SIP Amount (\u20b9)'},
                 color='sip_amount',
-                color_continuous_scale='Teal',
-                text_auto=',.0f'
+                color_continuous_scale='Teal'
             )
             fig_age.update_layout(showlegend=False, template="plotly_white",
                                   coloraxis_showscale=False, margin=dict(t=10))
-            fig_age.update_traces(textposition='outside')
             st.plotly_chart(fig_age, use_container_width=True)
         else:
             st.info("Age group or SIP data not available.")
@@ -616,15 +615,13 @@ elif page == "⚠️ SIP Continuity & Gaps":
                 )
             with col_chart:
                 fig_cohort = px.bar(
-                    cohort_summary, x='Registration Year', y='Total Invested (₹)',
+                    cohort_summary, x='Registration Year', y='Total Invested (\u20b9)',
                     color='Unique Investors',
                     color_continuous_scale='Purples',
-                    labels={'Registration Year': 'Cohort Year'},
-                    text_auto='.2s'
+                    labels={'Registration Year': 'Cohort Year'}
                 )
                 fig_cohort.update_layout(template="plotly_white",
                                          coloraxis_showscale=False, margin=dict(t=10))
-                fig_cohort.update_traces(textposition='outside')
                 st.plotly_chart(fig_cohort, use_container_width=True)
         else:
             st.info("No matching investor-transaction data for cohort analysis.")
