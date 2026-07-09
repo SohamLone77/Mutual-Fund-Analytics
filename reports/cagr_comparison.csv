@@ -1,7 +1,7 @@
-scheme_name,fund_house,CAGR_1yr (%),CAGR_3yr (%),CAGR_5yr (%)
-quant Mid Cap Fund - Growth Option - Direct Plan,quant Mutual Fund,2.99,17.53,18.01
-Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Nippon India Mutual Fund,0.5,15.39,16.27
-SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,5.44,14.34,15.5
-Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Axis Mutual Fund,-0.22,11.65,8.35
-HDFC Money Market Fund - Growth Option - Direct Plan,HDFC Mutual Fund,6.27,7.37,6.56
-Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Aditya Birla Sun Life Mutual Fund,-1.34,-1.95,-7.32
+scheme_name,cagr_1y,cagr_3y,cagr_5y
+Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,-1.6306,-1.6808,-7.0755
+Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,0.1322,11.7497,9.3356
+HDFC Money Market Fund - Growth Option - Direct Plan,6.4386,7.7144,6.7391
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,1.6969,16.281,17.9232
+SBI Small Cap Fund - Direct Plan - Growth,6.4793,15.0767,16.0692
+quant Mid Cap Fund - Growth Option - Direct Plan,2.5227,19.3415,19.1417
