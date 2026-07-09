@@ -1,0 +1,7 @@
+scheme_name,scheme_category,fund_house,return_1m,return_3m,return_1y,return_3y,return_5y,volatility,sharpe_ratio,anomaly_flag
+Aditya Birla Sun Life Banking & PSU Debt Fund - DIRECT - IDCW,Debt Scheme - Banking and PSU Fund,Aditya Birla Sun Life Mutual Fund,1.5359,-4.389,-1.6306,-1.6808,-7.0755,6.8823,-0.8783,1
+Axis ELSS Tax Saver Fund - Direct Plan - Growth Option,Equity Scheme - ELSS,Axis Mutual Fund,2.6375,11.975,0.1322,11.7497,9.3356,14.6374,0.5655,1
+HDFC Money Market Fund - Growth Option - Direct Plan,Debt Scheme - Money Market Fund,HDFC Mutual Fund,0.9704,1.8152,6.4386,7.7144,6.7391,0.5373,0.1627,0
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option,Equity Scheme - Large Cap Fund,Nippon India Mutual Fund,1.2364,6.5499,1.6969,16.281,17.9232,15.9338,0.5116,1
+SBI Small Cap Fund - Direct Plan - Growth,Equity Scheme - Small Cap Fund,SBI Mutual Fund,5.581,21.2623,6.4793,15.0767,16.0692,14.611,1.0395,1
+quant Mid Cap Fund - Growth Option - Direct Plan,Equity Scheme - Mid Cap Fund,quant Mutual Fund,0.2466,15.7305,2.5227,19.3415,19.1417,14.7391,0.6223,1
